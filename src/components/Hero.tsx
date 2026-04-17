@@ -12,13 +12,14 @@ export function Hero() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateX(-4cm) translateY(3cm)' }}>
         <div className="relative w-[600px] h-[700px] md:w-[750px] md:h-[850px] lg:w-[900px] lg:h-[1000px]">
           <Image
-            src="/Gemini_Generated_Image_ea7x05ea7x05ea7x.png"
+            src="/Gemini_Generated_Image_ljx3woljx3woljx3.png"
             alt="Plomero profesional"
             width={900}
             height={1000}
             className="object-contain object-top"
             style={{
-              filter: 'drop-shadow(0 25px 50px rgba(0,0,0,0.2))',
+              filter: 'brightness(0.95) contrast(1.4) saturate(1.3) drop-shadow(0 30px 60px rgba(0,0,0,0.25))',
+              mixBlendMode: 'darken',
               opacity: 0.95
             }}
             priority
