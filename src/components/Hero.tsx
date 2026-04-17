@@ -8,42 +8,42 @@ import { Calendar, MessageCircle, TrendingUp, Users, Zap, Target } from "lucide-
 export function Hero() {
   return (
     <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
-      <div className="container">
+      {/* Plombier détouré centré entre titre et carte */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="relative w-[500px] h-[600px] md:w-[600px] md:h-[700px] lg:w-[700px] lg:h-[800px]">
+          <Image
+            src="/Gemini_Generated_Image_ljx3woljx3woljx3.png"
+            alt="Plomero profesional"
+            width={700}
+            height={800}
+            className="object-contain"
+            style={{
+              filter: 'brightness(1.1) contrast(1.15) saturate(1.1) drop-shadow(0 25px 50px rgba(0,0,0,0.15))',
+              mixBlendMode: 'darken',
+              opacity: 0.85
+            }}
+            priority
+          />
+        </div>
+      </div>
+
+      <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 relative">
-            {/* Plombier détouré intégré au titre */}
-            <div className="relative">
-              <div className="absolute -right-16 -top-20 md:-right-24 md:-top-32 lg:-right-40 lg:-top-40 w-72 h-96 md:w-96 md:h-[500px] lg:w-[450px] lg:h-[600px] z-0">
-                <Image
-                  src="/Gemini_Generated_Image_ljx3woljx3woljx3.png"
-                  alt="Plomero profesional"
-                  width={600}
-                  height={400}
-                  className="object-contain object-left-top"
-                  style={{
-                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.25)) brightness(1.05) contrast(1.05)',
-                    mixBlendMode: 'multiply',
-                    opacity: 0.95
-                  }}
-                  priority
-                />
-              </div>
-              
-              <div className="relative z-10 space-y-4">
-                <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight">
-                  ¡Consigue más clientes,{" "}
-                  <span className="relative inline-block">
-                    <span className="relative z-10">no solo una web bonita!</span>
-                    <div className="absolute -inset-2 bg-primary/10 -skew-y-1 rounded-lg -z-10"></div>
-                  </span>
-                </h1>
-                <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl">
-                  Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
-                </p>
-              </div>
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight">
+                ¡Consigue más clientes,{" "}
+                <span className="relative inline-block">
+                  <span className="relative z-10">no solo una web bonita!</span>
+                  <div className="absolute -inset-2 bg-primary/10 -skew-y-1 rounded-lg -z-10"></div>
+                </span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl">
+                Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
+              </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 relative z-10">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="text-base font-semibold shadow-lg hover:shadow-xl transition-shadow" asChild>
                 <Link href="https://calendly.com/webparaautonomos" target="_blank">
                   <Calendar className="mr-2 h-5 w-5" />
@@ -58,7 +58,7 @@ export function Hero() {
               </Button>
             </div>
 
-            <div className="flex flex-wrap gap-3 items-center text-sm font-medium text-muted-foreground relative z-10">
+            <div className="flex flex-wrap gap-3 items-center text-sm font-medium text-muted-foreground">
               <span className="flex items-center gap-2">
                 <TrendingUp className="h-4 w-4 text-primary" />
                 + Leads
@@ -81,8 +81,8 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="lg:pl-8 relative z-10">
-            <Card className="p-8 space-y-6 border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow">
+          <div className="lg:pl-8">
+            <Card className="p-8 space-y-6 border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow bg-background/95 backdrop-blur-sm">
               <div className="space-y-2">
                 <div className="flex gap-2 flex-wrap">
                   <Badge className="bg-destructive hover:bg-destructive text-destructive-foreground font-semibold">
