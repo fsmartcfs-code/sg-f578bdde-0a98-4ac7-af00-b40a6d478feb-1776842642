@@ -7,7 +7,7 @@ import { Calendar, MessageCircle, TrendingUp, Users, Zap, Target } from "lucide-
 
 export function Hero() {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
+    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-background">
       {/* Plombier détouré centré entre titre et carte */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateX(-4cm) translateY(3cm)' }}>
         <div className="relative w-[600px] h-[700px] md:w-[750px] md:h-[850px] lg:w-[900px] lg:h-[1000px]">
