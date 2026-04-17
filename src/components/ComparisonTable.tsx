@@ -3,6 +3,12 @@ import { Check, X, AlertTriangle } from "lucide-react";
 
 const features = [
   {
+    name: "Propiedad de la web",
+    wpa: true,
+    cheap: "partial",
+    agency: "partial",
+  },
+  {
     name: "Captación de leads",
     wpa: true,
     cheap: "partial",
@@ -68,7 +74,7 @@ function StatusIcon({ status }: { status: boolean | string }) {
 function StatusText({ status }: { status: boolean | string }) {
   if (status === true) return "Incluida";
   if (status === false) return "No";
-  if (status === "partial") return "Parcial";
+  if (status === "partial") return "Cuotas";
   if (status === "complex") return "Complejo";
   if (status === "extra") return "Pago extra";
   return "";

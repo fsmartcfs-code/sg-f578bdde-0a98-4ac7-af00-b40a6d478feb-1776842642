@@ -60,9 +60,14 @@ export function Hero() {
           <div className="lg:pl-8">
             <Card className="p-8 space-y-6 border-2 border-primary shadow-xl">
               <div className="space-y-2">
-                <Badge className="bg-destructive hover:bg-destructive text-destructive-foreground font-semibold">
-                  Oferta Limitada · 7 días
-                </Badge>
+                <div className="flex gap-2 flex-wrap">
+                  <Badge className="bg-destructive hover:bg-destructive text-destructive-foreground font-semibold">
+                    Oferta Limitada · 7 días
+                  </Badge>
+                  <Badge variant="outline" className="border-primary text-primary font-semibold">
+                    Pago único
+                  </Badge>
+                </div>
                 <h3 className="font-heading text-2xl md:text-3xl font-bold">
                   Web Profesional Para Autónomos
                 </h3>
@@ -86,6 +91,10 @@ export function Hero() {
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">✓</span>
                     <span>Sección Portfolio</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary mt-1 font-bold">✓</span>
+                    <span className="font-semibold">La web es tuya forever · Sin cuotas mensuales</span>
                   </li>
                 </ul>
               </div>

@@ -18,6 +18,7 @@ const plans = [
       "CRM simple incluido",
       "WhatsApp directo integrado",
       "Soporte estándar",
+      "La web es tuya forever · Sin cuotas",
     ],
     cta: "Empezar ahora",
     popular: false,
@@ -36,6 +37,7 @@ const plans = [
       "Formulario de contacto avanzado",
       "Integración Calendly Premium",
       "Soporte prioritario",
+      "La web es tuya forever · Sin cuotas",
     ],
     cta: "Elegir Pro",
     popular: true,
@@ -54,6 +56,7 @@ const plans = [
       "CRM avanzado con seguimiento",
       "Integraciones personalizadas",
       "Soporte VIP 24/7",
+      "La web es tuya forever · Sin cuotas",
     ],
     cta: "Ir a Premium",
     popular: false,
@@ -70,6 +73,9 @@ export function PricingCards() {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Precios transparentes, sin sorpresas. Todos los planes incluyen setup completo en 7 días.
+          </p>
+          <p className="text-base font-semibold text-primary">
+            Pago único · La web es tuya forever · Sin cuotas mensuales
           </p>
         </div>
 
@@ -114,6 +120,9 @@ export function PricingCards() {
                       </span>
                     )}
                   </div>
+                  <p className="text-xs font-medium text-primary">
+                    Pago único · Sin cuotas
+                  </p>
                   {plan.originalPrice && (
                     <p className="text-xs text-muted-foreground">
                       Oferta válida 7 días
@@ -125,7 +134,9 @@ export function PricingCards() {
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm">
                       <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                      <span>{feature}</span>
+                      <span className={feature.includes("forever") ? "font-semibold" : ""}>
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
