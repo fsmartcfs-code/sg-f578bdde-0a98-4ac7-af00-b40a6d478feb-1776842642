@@ -13,22 +13,20 @@ export function Hero() {
           <div className="space-y-8 relative">
             {/* Plombier détouré intégré au titre */}
             <div className="relative">
-              <div className="absolute -right-12 -top-16 md:-right-20 md:-top-24 lg:-right-32 lg:-top-32 w-64 h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] z-0">
-                <div className="relative w-full h-full">
-                  <Image
-                    src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&h=800&fit=crop&crop=faces"
-                    alt="Plomero profesional"
-                    width={800}
-                    height={800}
-                    className="object-cover rounded-full opacity-90 mix-blend-multiply brightness-110 contrast-125 saturate-110"
-                    style={{
-                      filter: 'brightness(1.1) contrast(1.25) saturate(1.1)',
-                      clipPath: 'circle(45% at 50% 50%)'
-                    }}
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/40 to-background/80 rounded-full"></div>
-                </div>
+              <div className="absolute -right-16 -top-20 md:-right-24 md:-top-32 lg:-right-40 lg:-top-40 w-72 h-96 md:w-96 md:h-[500px] lg:w-[450px] lg:h-[600px] z-0">
+                <Image
+                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600&h=800&fit=crop"
+                  alt="Plomero profesional"
+                  width={600}
+                  height={800}
+                  className="object-cover object-center drop-shadow-2xl"
+                  style={{
+                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3)) brightness(1.05) contrast(1.1)',
+                    maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0) 100%)',
+                    WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0) 100%)'
+                  }}
+                  priority
+                />
               </div>
               
               <div className="relative z-10 space-y-4">
