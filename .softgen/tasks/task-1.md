@@ -1,6 +1,6 @@
 ---
 title: Build Spanish Conversion Landing Page
-status: in_progress
+status: done
 priority: urgent
 type: feature
 tags: [landing, conversion, spanish]
@@ -27,5 +27,5 @@ Complete landing page for autonomous workers in Spain. Conversion-focused with W
 - [x] Create FinalCTA component: conversion-focused with dual CTAs
 - [x] Create Footer component: branding + scarcity message
 - [x] Update index.tsx with complete landing page structure
-- [ ] Validate mobile-first responsive design
-- [ ] Check for errors and ensure WhatsApp/Calendly links are prominent
+- [x] Validate mobile-first responsive design
+- [x] Check for errors and ensure WhatsApp/Calendly links are prominent
