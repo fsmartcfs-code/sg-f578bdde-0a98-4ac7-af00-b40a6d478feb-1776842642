@@ -18,9 +18,10 @@ export function Hero() {
             height={1000}
             className="object-contain object-top"
             style={{
-              filter: 'brightness(1.3) contrast(1.6) saturate(1.4) drop-shadow(0 30px 60px rgba(0,0,0,0.3))',
+              maskImage: 'radial-gradient(ellipse at 50% 35%, black 45%, transparent 75%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at 50% 35%, black 45%, transparent 75%)',
               mixBlendMode: 'multiply',
-              opacity: 0.92
+              opacity: 0.95
             }}
             priority
           />
