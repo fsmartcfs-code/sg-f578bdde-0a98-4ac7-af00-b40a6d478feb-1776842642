@@ -15,15 +15,15 @@ export function Hero() {
             <div className="relative">
               <div className="absolute -right-16 -top-20 md:-right-24 md:-top-32 lg:-right-40 lg:-top-40 w-72 h-96 md:w-96 md:h-[500px] lg:w-[450px] lg:h-[600px] z-0">
                 <Image
-                  src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600&h=800&fit=crop"
+                  src="/Gemini_Generated_Image_ljx3woljx3woljx3.png"
                   alt="Plomero profesional"
                   width={600}
-                  height={800}
-                  className="object-cover object-center drop-shadow-2xl"
+                  height={400}
+                  className="object-contain object-left-top"
                   style={{
-                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3)) brightness(1.05) contrast(1.1)',
-                    maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0) 100%)',
-                    WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0) 100%)'
+                    filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.25)) brightness(1.05) contrast(1.05)',
+                    mixBlendMode: 'multiply',
+                    opacity: 0.95
                   }}
                   priority
                 />
