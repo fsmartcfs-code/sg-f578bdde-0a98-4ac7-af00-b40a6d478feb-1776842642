@@ -18,9 +18,9 @@ export function Hero() {
             height={1000}
             className="object-contain object-top"
             style={{
-              filter: 'brightness(0.95) contrast(1.4) saturate(1.3) drop-shadow(0 30px 60px rgba(0,0,0,0.25))',
-              mixBlendMode: 'darken',
-              opacity: 0.95
+              filter: 'brightness(1.3) contrast(1.6) saturate(1.4) drop-shadow(0 30px 60px rgba(0,0,0,0.3))',
+              mixBlendMode: 'multiply',
+              opacity: 0.92
             }}
             priority
           />
