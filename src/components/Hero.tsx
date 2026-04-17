@@ -16,14 +16,18 @@ export function Hero() {
               <div className="absolute -right-12 -top-16 md:-right-20 md:-top-24 lg:-right-32 lg:-top-32 w-64 h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] z-0">
                 <div className="relative w-full h-full">
                   <Image
-                    src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&h=800&fit=crop"
+                    src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&h=800&fit=crop&crop=faces"
                     alt="Plomero profesional"
                     width={800}
                     height={800}
-                    className="object-cover rounded-full opacity-80 mix-blend-multiply scale-110"
+                    className="object-cover rounded-full opacity-90 mix-blend-multiply brightness-110 contrast-125 saturate-110"
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.25) saturate(1.1)',
+                      clipPath: 'circle(45% at 50% 50%)'
+                    }}
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/30 to-background rounded-full"></div>
+                  <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/40 to-background/80 rounded-full"></div>
                 </div>
               </div>
               
