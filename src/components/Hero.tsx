@@ -18,14 +18,13 @@ export function Hero() {
             height={1000}
             className="object-contain object-top"
             style={{
-              filter: 'brightness(1.2) contrast(1.3) saturate(1.2) drop-shadow(0 30px 60px rgba(0,0,0,0.2)) hue-rotate(-5deg)',
-              mixBlendMode: 'multiply',
-              opacity: 0.9,
-              maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0) 100%)',
-              WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0) 100%)'
+              filter: 'brightness(0.95) contrast(1.4) saturate(1.3) drop-shadow(0 30px 60px rgba(0,0,0,0.25))',
+              mixBlendMode: 'darken',
+              opacity: 0.95
             }}
             priority
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/80" style={{ mixBlendMode: 'lighten' }}></div>
         </div>
       </div>
 
