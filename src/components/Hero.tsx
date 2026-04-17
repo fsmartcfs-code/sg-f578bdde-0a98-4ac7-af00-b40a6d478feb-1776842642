@@ -9,18 +9,20 @@ export function Hero() {
   return (
     <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
       {/* Plombier détouré centré entre titre et carte */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="relative w-[500px] h-[600px] md:w-[600px] md:h-[700px] lg:w-[700px] lg:h-[800px]">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateX(-4cm)' }}>
+        <div className="relative w-[600px] h-[700px] md:w-[750px] md:h-[850px] lg:w-[900px] lg:h-[1000px]">
           <Image
             src="/Gemini_Generated_Image_ljx3woljx3woljx3.png"
             alt="Plomero profesional"
-            width={700}
-            height={800}
+            width={900}
+            height={1000}
             className="object-contain"
             style={{
-              filter: 'brightness(1.1) contrast(1.15) saturate(1.1) drop-shadow(0 25px 50px rgba(0,0,0,0.15))',
-              mixBlendMode: 'darken',
-              opacity: 0.85
+              filter: 'brightness(1.2) contrast(1.3) saturate(1.2) drop-shadow(0 30px 60px rgba(0,0,0,0.2)) hue-rotate(-5deg)',
+              mixBlendMode: 'multiply',
+              opacity: 0.9,
+              maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 10%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.3) 95%, rgba(0,0,0,0) 100%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 10%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0.3) 95%, rgba(0,0,0,0) 100%)'
             }}
             priority
           />
