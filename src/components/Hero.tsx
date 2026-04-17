@@ -30,7 +30,7 @@ export function Hero() {
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 relative lg:-left-8 xl:-left-12">
             <div className="space-y-4">
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight">
                 ¡Consigue más clientes,{" "}
