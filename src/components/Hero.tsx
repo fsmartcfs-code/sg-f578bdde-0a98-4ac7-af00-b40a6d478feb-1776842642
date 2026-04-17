@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,13 +11,38 @@ export function Hero() {
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight">
-                ¡Consigue más clientes, no solo una web bonita!
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl">
-                Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
-              </p>
+            <div className="space-y-4 relative">
+              {/* Imagen de plomero integrada con el título */}
+              <div className="relative">
+                <div className="absolute -left-4 -top-8 md:-left-8 md:-top-12 w-32 h-32 md:w-48 md:h-48 opacity-20 rounded-full overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400&h=400&fit=crop"
+                    alt="Plomero profesional"
+                    width={400}
+                    height={400}
+                    className="object-cover mix-blend-multiply"
+                  />
+                </div>
+                <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight relative z-10">
+                  ¡Consigue más clientes, no solo una web bonita!
+                </h1>
+              </div>
+              
+              {/* Imagen adicional integrada en el fondo del texto */}
+              <div className="relative">
+                <div className="absolute right-0 -bottom-4 w-24 h-24 md:w-32 md:h-32 opacity-15 rounded-full overflow-hidden">
+                  <Image
+                    src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=300&h=300&fit=crop"
+                    alt="Herramientas profesionales"
+                    width={300}
+                    height={300}
+                    className="object-cover mix-blend-multiply"
+                  />
+                </div>
+                <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl relative z-10">
+                  Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
