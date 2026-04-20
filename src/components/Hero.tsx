@@ -31,13 +31,13 @@ export function Hero() {
         <div className="space-y-8">
           {/* Titre et CTAs */}
           <div className="space-y-6 lg:max-w-xl">
-            <div className="space-y-4">
+            <div className="space-y-2">
               <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight text-center lg:text-left" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.8)' }}>
                 ¡Consigue <span className="text-primary">más clientes</span>, no solo una web bonita!
               </h1>
 
               {/* Image visible sur mobile uniquement - juste après le titre */}
-              <div className="lg:hidden flex justify-center -mx-4 py-2">
+              <div className="lg:hidden flex justify-center -mx-4">
                 <div className="relative w-full max-w-[750px]">
                   <Image
                     src="/semfundo.png"
