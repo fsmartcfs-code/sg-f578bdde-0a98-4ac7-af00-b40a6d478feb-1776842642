@@ -46,7 +46,11 @@ export function Hero() {
             </div>
 
             {/* Widget Google Reviews */}
-            <div className="flex items-center justify-center lg:justify-start gap-2 py-2">
+            <Link 
+              href="https://www.google.com/maps/place/Web+Para+Aut%C3%B3nomos/@35.2266835,-17.413385,5z/data=!4m8!3m7!1s0xd171d801a60f83f:0x382c3291a63290b6!8m2!3d35.67445!4d-6.8143!9m1!1b1!16s%2Fg%2F11nc0lcnm0?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              className="flex items-center justify-center lg:justify-start gap-2 py-2 hover:opacity-80 transition-opacity"
+            >
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 fill-accent" viewBox="0 0 20 20">
@@ -57,7 +61,7 @@ export function Hero() {
               <span className="text-sm font-bold text-foreground">5.0</span>
               <span className="text-sm text-muted-foreground">·</span>
               <span className="text-sm font-bold text-muted-foreground">127 opiniones en Google</span>
-            </div>
+            </Link>
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" className="text-base font-semibold shadow-lg hover:shadow-xl transition-shadow w-full sm:w-auto" asChild>
