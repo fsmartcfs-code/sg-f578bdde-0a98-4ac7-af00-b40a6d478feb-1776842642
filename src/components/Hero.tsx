@@ -30,11 +30,11 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 relative lg:-left-8 xl:-left-12">
             <div className="space-y-4">
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight">
+              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.8)' }}>
                 ¡Consigue más clientes,{" "}
                 <span className="relative z-10">no solo una web bonita!</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl">
+              <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl" style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.6)' }}>
                 Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
               </p>
             </div>
