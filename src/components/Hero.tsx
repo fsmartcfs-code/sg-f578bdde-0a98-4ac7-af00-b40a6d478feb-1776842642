@@ -67,7 +67,7 @@ export function Hero() {
                 </Link>
               </Button>
               <Button size="lg" className="text-base font-semibold shadow-sm hover:shadow-md transition-shadow w-full sm:w-auto bg-[#25D366] hover:bg-[#20BA5A] text-white border-0" asChild>
-                <Link href="https://wa.me/34600000000" target="_blank">
+                <Link href="https://wa.me/34711248274" target="_blank">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Escribir por WhatsApp
                 </Link>
