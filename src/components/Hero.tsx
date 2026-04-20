@@ -37,7 +37,7 @@ export function Hero() {
               </h1>
 
               {/* Image visible sur mobile uniquement - juste après le titre */}
-              <div className="lg:hidden flex justify-center -mx-4 py-6">
+              <div className="lg:hidden flex justify-center -mx-4 py-2">
                 <div className="relative w-full max-w-[750px]">
                   <Image
                     src="/semfundo.png"
