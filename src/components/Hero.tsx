@@ -12,7 +12,7 @@ export function Hero() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[5]">
         <div className="relative w-[400px] h-[500px] md:w-[500px] md:h-[600px] lg:w-[600px] lg:h-[700px]">
           <Image
-            src="/Gemini_Generated_Image_ea7x05ea7x05ea7x.png"
+            src="/semfundo.png"
             alt="Plomero profesional"
             width={600}
             height={700}
