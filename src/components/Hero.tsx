@@ -92,24 +92,6 @@ export function Hero() {
               </span>
             </div>
           </div>
-
-          {/* Image visible sur mobile uniquement */}
-          <div className="lg:hidden flex justify-center -mx-4">
-            <div className="relative w-full max-w-[400px]">
-              <Image
-                src="/semfundo.png"
-                alt="Plomero profesional"
-                width={400}
-                height={500}
-                className="object-contain w-full h-auto"
-                style={{
-                  imageRendering: 'crisp-edges',
-                  filter: 'contrast(1.15) brightness(1.02) saturate(1.1)'
-                }}
-                priority
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>
