@@ -9,17 +9,14 @@ export function Hero() {
   return (
     <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-white">
       {/* Plombier détouré centré entre titre et carte */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[5]" style={{ transform: 'translateX(-4cm) translateY(3cm)' }}>
-        <div className="relative w-[600px] h-[700px] md:w-[750px] md:h-[850px] lg:w-[900px] lg:h-[1000px]">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[5]">
+        <div className="relative w-[400px] h-[500px] md:w-[500px] md:h-[600px] lg:w-[600px] lg:h-[700px]">
           <Image
             src="/Gemini_Generated_Image_ea7x05ea7x05ea7x.png"
             alt="Plomero profesional"
-            width={900}
-            height={1000}
-            className="object-contain object-top"
-            style={{
-              opacity: 1
-            }}
+            width={600}
+            height={700}
+            className="object-contain"
             priority
           />
         </div>
