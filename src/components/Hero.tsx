@@ -28,10 +28,7 @@ export function Hero() {
             <div className="space-y-4">
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight">
                 ¡Consigue más clientes,{" "}
-                <span className="relative inline-block">
-                  <span className="relative z-10">no solo una web bonita!</span>
-                  <div className="absolute -inset-2 bg-primary/10 -skew-y-1 rounded-lg -z-10"></div>
-                </span>
+                <span className="relative z-10">no solo una web bonita!</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl">
                 Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
