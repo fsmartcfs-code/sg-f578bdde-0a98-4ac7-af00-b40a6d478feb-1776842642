@@ -8,24 +8,6 @@ import { Calendar, MessageCircle, TrendingUp, Users, Zap, Target } from "lucide-
 export function Hero() {
   return (
     <section className="relative py-4 md:py-12 lg:py-24 overflow-hidden bg-white">
-      {/* Image cachée sur mobile, visible seulement sur desktop */}
-      <div className="hidden lg:block absolute inset-0 pointer-events-none z-[5]" style={{ transform: 'translateX(-150px) translateY(190px)' }}>
-        <div className="relative w-[900px] h-[1100px] mx-auto">
-          <Image
-            src="/semfundo.png"
-            alt="Plomero profesional"
-            width={900}
-            height={1100}
-            className="object-contain"
-            style={{
-              imageRendering: 'crisp-edges',
-              filter: 'contrast(1.15) brightness(1.02) saturate(1.1)'
-            }}
-            priority
-          />
-        </div>
-      </div>
-
       <div className="container relative z-10">
         {/* Layout mobile: tout en colonne */}
         <div className="space-y-8">
