@@ -12,7 +12,7 @@ export function Hero() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateX(-4cm) translateY(3cm)' }}>
         <div className="relative w-[600px] h-[700px] md:w-[750px] md:h-[850px] lg:w-[900px] lg:h-[1000px]">
           <Image
-            src="/Gemini_Generated_Image_ljx3woljx3woljx3.png"
+            src="/Gemini_Generated_Image_ea7x05ea7x05ea7x.png"
             alt="Plomero profesional"
             width={900}
             height={1000}
