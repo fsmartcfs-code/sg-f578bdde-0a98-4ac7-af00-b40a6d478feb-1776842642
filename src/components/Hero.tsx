@@ -78,6 +78,24 @@ export function Hero() {
             </div>
           </div>
 
+          {/* Image visible sur mobile uniquement */}
+          <div className="lg:hidden flex justify-center -mx-4">
+            <div className="relative w-full max-w-[400px]">
+              <Image
+                src="/semfundo.png"
+                alt="Plomero profesional"
+                width={400}
+                height={500}
+                className="object-contain w-full h-auto"
+                style={{
+                  imageRendering: 'crisp-edges',
+                  filter: 'contrast(1.15) brightness(1.02) saturate(1.1)'
+                }}
+                priority
+              />
+            </div>
+          </div>
+
           {/* Carte de prix - en bas sur mobile, à droite sur desktop */}
           <div className="lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:w-[420px]">
             <Card className="p-6 md:p-8 space-y-6 border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow bg-background/95 backdrop-blur-sm">
