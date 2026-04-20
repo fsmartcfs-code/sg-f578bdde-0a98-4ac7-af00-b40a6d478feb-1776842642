@@ -19,7 +19,7 @@ export function Hero() {
             className="object-contain"
             style={{
               imageRendering: 'crisp-edges',
-              filter: 'contrast(1.05) sharpen(1)'
+              filter: 'contrast(1.15) brightness(1.02) saturate(1.1)'
             }}
             priority
           />
