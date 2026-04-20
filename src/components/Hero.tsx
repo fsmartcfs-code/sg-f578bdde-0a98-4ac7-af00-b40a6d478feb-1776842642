@@ -50,9 +50,9 @@ export function Hero() {
                   </svg>
                 ))}
               </div>
-              <span className="text-sm font-semibold text-foreground">5.0</span>
+              <span className="text-sm font-bold text-foreground">5.0</span>
               <span className="text-sm text-muted-foreground">·</span>
-              <span className="text-sm text-muted-foreground">127 opiniones en Google</span>
+              <span className="text-sm font-bold text-muted-foreground">127 opiniones en Google</span>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
