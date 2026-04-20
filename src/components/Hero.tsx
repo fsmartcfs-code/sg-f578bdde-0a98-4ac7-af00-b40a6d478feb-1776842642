@@ -17,12 +17,6 @@ export function Hero() {
             width={900}
             height={1000}
             className="object-contain object-top"
-            style={{
-              maskImage: 'radial-gradient(ellipse at 50% 35%, black 45%, transparent 75%)',
-              WebkitMaskImage: 'radial-gradient(ellipse at 50% 35%, black 45%, transparent 75%)',
-              mixBlendMode: 'multiply',
-              opacity: 0.95
-            }}
             priority
           />
         </div>
