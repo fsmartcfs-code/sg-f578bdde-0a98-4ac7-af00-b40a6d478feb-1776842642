@@ -7,9 +7,9 @@ import { Calendar, MessageCircle, TrendingUp, Users, Zap, Target } from "lucide-
 
 export function Hero() {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-background">
+    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-white">
       {/* Plombier détouré centré entre titre et carte */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: 'translateX(-4cm) translateY(3cm)' }}>
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[5]" style={{ transform: 'translateX(-4cm) translateY(3cm)' }}>
         <div className="relative w-[600px] h-[700px] md:w-[750px] md:h-[850px] lg:w-[900px] lg:h-[1000px]">
           <Image
             src="/Gemini_Generated_Image_ea7x05ea7x05ea7x.png"
@@ -17,6 +17,9 @@ export function Hero() {
             width={900}
             height={1000}
             className="object-contain object-top"
+            style={{
+              opacity: 1
+            }}
             priority
           />
         </div>
