@@ -33,17 +33,17 @@ export function Hero() {
           <div className="space-y-6 lg:max-w-xl">
             <div className="space-y-4">
               <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.8)' }}>
-                ¡Consigue más clientes, no solo una web bonita!
+                ¡Consigue <span className="text-primary">más clientes</span>, no solo una web bonita!
               </h1>
 
               {/* Image visible sur mobile uniquement - juste après le titre */}
               <div className="lg:hidden flex justify-center -mx-4 py-6">
-                <div className="relative w-full max-w-[400px]">
+                <div className="relative w-full max-w-[500px]">
                   <Image
                     src="/semfundo.png"
                     alt="Plomero profesional"
-                    width={400}
-                    height={500}
+                    width={500}
+                    height={625}
                     className="object-contain w-full h-auto"
                     style={{
                       imageRendering: 'crisp-edges',
