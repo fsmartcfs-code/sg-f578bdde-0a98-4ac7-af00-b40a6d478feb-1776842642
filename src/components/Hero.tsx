@@ -69,7 +69,7 @@ export function Hero() {
                 <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-sm font-medium text-foreground">+15 clientes satisfechos</span>
+                <span className="text-sm font-medium text-foreground">Sin cuotas mensuales*</span>
               </div>
               <div className="flex items-center gap-1.5 bg-primary/5 border border-primary/20 rounded-full px-3 py-1">
                 <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
