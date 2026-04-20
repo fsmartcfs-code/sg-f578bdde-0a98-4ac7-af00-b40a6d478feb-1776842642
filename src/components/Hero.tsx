@@ -38,12 +38,12 @@ export function Hero() {
 
               {/* Image visible sur mobile uniquement - juste après le titre */}
               <div className="lg:hidden flex justify-center -mx-4 py-6">
-                <div className="relative w-full max-w-[500px]">
+                <div className="relative w-full max-w-[600px]">
                   <Image
                     src="/semfundo.png"
                     alt="Plomero profesional"
-                    width={500}
-                    height={625}
+                    width={600}
+                    height={750}
                     className="object-contain w-full h-auto"
                     style={{
                       imageRendering: 'crisp-edges',
@@ -113,57 +113,6 @@ export function Hero() {
                 priority
               />
             </div>
-          </div>
-
-          {/* Carte de prix - en bas sur mobile, à droite sur desktop */}
-          <div className="lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:w-[420px]">
-            <Card className="p-6 md:p-8 space-y-6 border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow bg-background/95 backdrop-blur-sm">
-              <div className="space-y-2">
-                <div className="flex gap-2 flex-wrap">
-                  <Badge className="bg-destructive hover:bg-destructive text-destructive-foreground font-semibold">
-                    Oferta Limitada · 7 días
-                  </Badge>
-                  <Badge variant="outline" className="border-primary text-primary font-semibold">
-                    Pago único
-                  </Badge>
-                </div>
-                <h3 className="font-heading text-xl md:text-2xl lg:text-3xl font-bold">
-                  Web Profesional Para Autónomos
-                </h3>
-              </div>
-
-              <div className="space-y-4">
-                <div className="flex items-baseline gap-3">
-                  <span className="text-4xl md:text-5xl font-heading font-bold text-primary">497€</span>
-                  <span className="text-xl md:text-2xl text-muted-foreground line-through">697€</span>
-                </div>
-
-                <ul className="space-y-3 text-sm md:text-base">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Web Profesional Para Autónomos</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Widget Reviews (Google/Trustpilot)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Sección Portfolio</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary mt-1 font-bold">✓</span>
-                    <span className="font-semibold">La web es tuya forever · Sin cuotas mensuales</span>
-                  </li>
-                </ul>
-              </div>
-
-              <Button size="lg" className="w-full text-base font-semibold" asChild>
-                <Link href="https://calendly.com/webparaautonomos" target="_blank">
-                  Reservar ahora
-                </Link>
-              </Button>
-            </Card>
           </div>
         </div>
       </div>
