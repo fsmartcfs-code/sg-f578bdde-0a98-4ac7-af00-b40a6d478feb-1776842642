@@ -39,6 +39,10 @@ export function Hero() {
               <p className="text-base md:text-lg lg:text-xl font-bold text-muted-foreground max-w-2xl text-center lg:text-left" style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.6)' }}>
                 Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
               </p>
+              
+              <p className="text-base md:text-lg font-bold text-primary text-center lg:text-left">
+                La web es tuya forever! Sin cuotas mensuales
+              </p>
             </div>
 
             {/* Widget Google Reviews */}
