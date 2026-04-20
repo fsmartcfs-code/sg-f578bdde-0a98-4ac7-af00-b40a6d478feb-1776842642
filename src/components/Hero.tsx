@@ -7,7 +7,7 @@ import { Calendar, MessageCircle, TrendingUp, Users, Zap, Target } from "lucide-
 
 export function Hero() {
   return (
-    <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden bg-white">
+    <section className="relative py-4 md:py-12 lg:py-24 overflow-hidden bg-white">
       {/* Image cachée sur mobile, visible seulement sur desktop */}
       <div className="hidden lg:block absolute inset-0 pointer-events-none z-[5]" style={{ transform: 'translateX(-150px) translateY(190px)' }}>
         <div className="relative w-[900px] h-[1100px] mx-auto">
