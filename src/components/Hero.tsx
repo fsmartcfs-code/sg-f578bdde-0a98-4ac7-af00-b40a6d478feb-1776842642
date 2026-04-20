@@ -60,7 +60,7 @@ export function Hero() {
               </div>
               <span className="text-sm font-bold text-foreground">5.0</span>
               <span className="text-sm text-muted-foreground">·</span>
-              <span className="text-sm font-bold text-muted-foreground">127 opiniones en Google</span>
+              <span className="text-sm font-bold text-muted-foreground">1 opinión en Google</span>
             </Link>
 
             <div className="flex flex-col sm:flex-row gap-3">
