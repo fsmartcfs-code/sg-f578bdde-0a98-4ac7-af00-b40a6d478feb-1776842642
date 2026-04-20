@@ -7,10 +7,10 @@ import { Calendar, MessageCircle, TrendingUp, Users, Zap, Target } from "lucide-
 
 export function Hero() {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden bg-white">
-      {/* Plombier détouré centré entre titre et carte */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[5]" style={{ transform: 'translateX(-150px) translateY(190px)' }}>
-        <div className="relative w-[600px] h-[750px] md:w-[750px] md:h-[900px] lg:w-[900px] lg:h-[1100px]">
+    <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden bg-white">
+      {/* Image cachée sur mobile, visible seulement sur desktop */}
+      <div className="hidden lg:block absolute inset-0 pointer-events-none z-[5]" style={{ transform: 'translateX(-150px) translateY(190px)' }}>
+        <div className="relative w-[900px] h-[1100px] mx-auto">
           <Image
             src="/semfundo.png"
             alt="Plomero profesional"
@@ -27,26 +27,27 @@ export function Hero() {
       </div>
 
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 relative lg:-left-8 xl:-left-12">
+        {/* Layout mobile: tout en colonne */}
+        <div className="space-y-8">
+          {/* Titre et CTAs */}
+          <div className="space-y-6 lg:max-w-xl">
             <div className="space-y-4">
-              <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.8)' }}>
-                ¡Consigue más clientes,{" "}
-                <span className="relative z-10">no solo una web bonita!</span>
+              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight" style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.8)' }}>
+                ¡Consigue más clientes, no solo una web bonita!
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground text-balance max-w-2xl" style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.6)' }}>
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl" style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.6)' }}>
                 Web Para Autónomos pensada para convertir visitas en contactos: botones claros, prueba social visible y portfolio para generar confianza desde el primer scroll.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-base font-semibold shadow-lg hover:shadow-xl transition-shadow" asChild>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button size="lg" className="text-base font-semibold shadow-lg hover:shadow-xl transition-shadow w-full sm:w-auto" asChild>
                 <Link href="https://calendly.com/webparaautonomos" target="_blank">
                   <Calendar className="mr-2 h-5 w-5" />
                   Reservar llamada
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="text-base font-semibold border-2 shadow-sm hover:shadow-md transition-shadow" asChild>
+              <Button size="lg" variant="outline" className="text-base font-semibold border-2 shadow-sm hover:shadow-md transition-shadow w-full sm:w-auto" asChild>
                 <Link href="https://wa.me/34600000000" target="_blank">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Escribir por WhatsApp
@@ -77,8 +78,9 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="lg:pl-8">
-            <Card className="p-8 space-y-6 border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow bg-background/95 backdrop-blur-sm">
+          {/* Carte de prix - en bas sur mobile, à droite sur desktop */}
+          <div className="lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:w-[420px]">
+            <Card className="p-6 md:p-8 space-y-6 border-2 border-primary shadow-xl hover:shadow-2xl transition-shadow bg-background/95 backdrop-blur-sm">
               <div className="space-y-2">
                 <div className="flex gap-2 flex-wrap">
                   <Badge className="bg-destructive hover:bg-destructive text-destructive-foreground font-semibold">
@@ -88,18 +90,18 @@ export function Hero() {
                     Pago único
                   </Badge>
                 </div>
-                <h3 className="font-heading text-2xl md:text-3xl font-bold">
+                <h3 className="font-heading text-xl md:text-2xl lg:text-3xl font-bold">
                   Web Profesional Para Autónomos
                 </h3>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-baseline gap-3">
-                  <span className="text-5xl font-heading font-bold text-primary">497€</span>
-                  <span className="text-2xl text-muted-foreground line-through">697€</span>
+                  <span className="text-4xl md:text-5xl font-heading font-bold text-primary">497€</span>
+                  <span className="text-xl md:text-2xl text-muted-foreground line-through">697€</span>
                 </div>
 
-                <ul className="space-y-3 text-base">
+                <ul className="space-y-3 text-sm md:text-base">
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-1">✓</span>
                     <span>Web Profesional Para Autónomos</span>
