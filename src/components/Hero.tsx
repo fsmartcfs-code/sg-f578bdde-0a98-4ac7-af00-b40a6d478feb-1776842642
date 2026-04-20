@@ -60,8 +60,30 @@ export function Hero() {
               </div>
               <span className="text-sm font-bold text-foreground">5.0</span>
               <span className="text-sm text-muted-foreground">·</span>
-              <span className="text-sm font-bold text-muted-foreground">1 opinión en Google</span>
+              <span className="text-sm font-bold text-muted-foreground">Google</span>
             </Link>
+
+            {/* Badges de confiance */}
+            <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+              <div className="flex items-center gap-1.5 bg-primary/5 border border-primary/20 rounded-full px-3 py-1">
+                <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-sm font-medium text-foreground">+15 clientes satisfechos</span>
+              </div>
+              <div className="flex items-center gap-1.5 bg-primary/5 border border-primary/20 rounded-full px-3 py-1">
+                <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-sm font-medium text-foreground">Entrega en 15 días laborables</span>
+              </div>
+              <div className="flex items-center gap-1.5 bg-primary/5 border border-primary/20 rounded-full px-3 py-1">
+                <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-sm font-medium text-foreground">Garantía satisfacción 30 días</span>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Button size="lg" className="text-base font-semibold shadow-lg hover:shadow-xl transition-shadow w-full sm:w-auto" asChild>
