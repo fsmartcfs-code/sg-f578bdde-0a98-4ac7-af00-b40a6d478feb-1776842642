@@ -66,7 +66,7 @@ const proFeatures = [
     agency: "complex",
   },
   {
-    name: "Devis semi-automatiques",
+    name: "Presupuestos semi-automáticos",
     wpa: true,
     cheap: false,
     agency: "extra",
@@ -87,25 +87,25 @@ const premiumFeatures = [
     agency: "partial",
   },
   {
-    name: "Agent IA automatique",
+    name: "Agente IA automático",
     wpa: true,
     cheap: false,
     agency: false,
   },
   {
-    name: "Intégration Stripe",
+    name: "Integración Stripe",
     wpa: true,
     cheap: false,
     agency: "extra",
   },
   {
-    name: "Automatisation avancée",
+    name: "Automatización avanzada",
     wpa: true,
     cheap: false,
     agency: "extra",
   },
   {
-    name: "Support prioritaire",
+    name: "Soporte prioritario",
     wpa: true,
     cheap: false,
     agency: true,
