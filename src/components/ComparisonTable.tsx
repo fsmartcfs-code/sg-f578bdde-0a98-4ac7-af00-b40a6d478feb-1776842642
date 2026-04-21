@@ -3,6 +3,12 @@ import { Check, X, AlertTriangle } from "lucide-react";
 
 const features = [
   {
+    name: "Precio",
+    wpa: "497€ - 1297€",
+    cheap: "200€ - 400€",
+    agency: "2000€ - 5000€",
+  },
+  {
     name: "Propiedad de la web",
     wpa: true,
     cheap: "partial",
@@ -68,6 +74,7 @@ function StatusIcon({ status }: { status: boolean | string }) {
   if (status === "partial" || status === "complex" || status === "extra") {
     return <AlertTriangle className="h-5 w-5 text-amber-500" />;
   }
+  // Pour les prix, pas d'icône
   return null;
 }
 
@@ -77,6 +84,8 @@ function StatusText({ status }: { status: boolean | string }) {
   if (status === "partial") return "Cuotas";
   if (status === "complex") return "Complejo";
   if (status === "extra") return "Pago extra";
+  // Si c'est un string qui n'est pas un des cas ci-dessus, on l'affiche tel quel (pour les prix)
+  if (typeof status === "string") return status;
   return "";
 }
 
@@ -133,7 +142,7 @@ export function ComparisonTable() {
                     <td className="p-4 text-center">
                       <div className="flex flex-col items-center gap-1">
                         <StatusIcon status={feature.wpa} />
-                        <span className="text-xs text-muted-foreground hidden md:inline">
+                        <span className={`text-xs md:text-sm ${typeof feature.wpa === "string" && !["partial", "complex", "extra"].includes(feature.wpa) ? "font-bold text-primary" : "text-muted-foreground"}`}>
                           <StatusText status={feature.wpa} />
                         </span>
                       </div>
@@ -141,7 +150,7 @@ export function ComparisonTable() {
                     <td className="p-4 text-center">
                       <div className="flex flex-col items-center gap-1">
                         <StatusIcon status={feature.cheap} />
-                        <span className="text-xs text-muted-foreground hidden md:inline">
+                        <span className={`text-xs md:text-sm ${typeof feature.cheap === "string" && !["partial", "complex", "extra"].includes(feature.cheap) ? "font-medium" : "text-muted-foreground"}`}>
                           <StatusText status={feature.cheap} />
                         </span>
                       </div>
@@ -149,7 +158,7 @@ export function ComparisonTable() {
                     <td className="p-4 text-center">
                       <div className="flex flex-col items-center gap-1">
                         <StatusIcon status={feature.agency} />
-                        <span className="text-xs text-muted-foreground hidden md:inline">
+                        <span className={`text-xs md:text-sm ${typeof feature.agency === "string" && !["partial", "complex", "extra"].includes(feature.agency) ? "font-medium" : "text-muted-foreground"}`}>
                           <StatusText status={feature.agency} />
                         </span>
                       </div>
