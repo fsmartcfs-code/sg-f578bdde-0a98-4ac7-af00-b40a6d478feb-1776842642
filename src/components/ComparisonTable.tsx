@@ -1,72 +1,90 @@
 import { Card } from "@/components/ui/card";
 import { Check, X, AlertTriangle } from "lucide-react";
 
-const baseFeatures = [
+const esencialFeatures = [
   {
-    name: "Precio base",
+    name: "Precio",
     wpa: "497€",
     cheap: "200€ - 400€",
     agency: "2000€ - 5000€",
   },
   {
-    name: "Propiedad de la web",
-    wpa: true,
-    cheap: "partial",
-    agency: "partial",
-  },
-  {
-    name: "Formulario de contacto para captación de leads",
+    name: "Web Profesional Para Autónomos",
     wpa: true,
     cheap: "partial",
     agency: true,
   },
   {
-    name: "Prueba Social (Reviews)",
+    name: "Widget Reviews (Google/Trustpilot)",
     wpa: true,
     cheap: false,
     agency: "extra",
   },
   {
-    name: "Portfolio integrado",
+    name: "Sección Portfolio",
     wpa: true,
     cheap: false,
     agency: true,
   },
   {
-    name: "WhatsApp directo",
-    wpa: true,
-    cheap: true,
-    agency: false,
-  },
-  {
-    name: "Precio transparente",
-    wpa: true,
-    cheap: true,
-    agency: false,
-  },
-  {
-    name: "Setup rápido (7 días)",
-    wpa: true,
-    cheap: false,
-    agency: false,
-  },
-];
-
-const proFeatures = [
-  {
-    name: "Precio con opciones Pro",
-    wpa: "797€",
-    cheap: "No disponible",
-    agency: "3000€+",
-  },
-  {
-    name: "CRM simple",
+    name: "CRM simple incluido",
     wpa: true,
     cheap: false,
     agency: "complex",
   },
   {
-    name: "Presupuestos semi-automáticos",
+    name: "WhatsApp directo integrado",
+    wpa: true,
+    cheap: true,
+    agency: false,
+  },
+  {
+    name: "Soporte estándar",
+    wpa: true,
+    cheap: "partial",
+    agency: true,
+  },
+];
+
+const proFeatures = [
+  {
+    name: "Precio Pack Pro",
+    wpa: "797€",
+    cheap: "No disponible",
+    agency: "3000€+",
+  },
+  {
+    name: "Todo lo de Esencial +",
+    wpa: true,
+    cheap: false,
+    agency: "partial",
+  },
+  {
+    name: "Portfolio Pro (5 proyectos destacados)",
+    wpa: true,
+    cheap: false,
+    agency: true,
+  },
+  {
+    name: "Devis IA semi-automáticos",
+    wpa: true,
+    cheap: false,
+    agency: "extra",
+  },
+  {
+    name: "Kit Digital incluido",
+    wpa: true,
+    cheap: false,
+    agency: false,
+  },
+  {
+    name: "Formulario de contacto avanzado",
+    wpa: true,
+    cheap: "partial",
+    agency: true,
+  },
+  {
+    name: "Integración Calendly Premium",
     wpa: true,
     cheap: false,
     agency: "extra",
@@ -81,34 +99,46 @@ const premiumFeatures = [
     agency: "5000€+",
   },
   {
-    name: "Todo lo anterior +",
+    name: "Todo lo de Pro +",
     wpa: true,
     cheap: false,
     agency: "partial",
   },
   {
-    name: "Agente IA automático",
+    name: "Portfolio Ilimitado",
+    wpa: true,
+    cheap: false,
+    agency: true,
+  },
+  {
+    name: "Agente IA conversacional",
     wpa: true,
     cheap: false,
     agency: false,
   },
   {
-    name: "Integración Stripe",
+    name: "Automatización completa devis",
     wpa: true,
     cheap: false,
     agency: "extra",
   },
   {
-    name: "Automatización avanzada",
+    name: "CRM avanzado con seguimiento",
+    wpa: true,
+    cheap: false,
+    agency: "complex",
+  },
+  {
+    name: "Integraciones personalizadas",
     wpa: true,
     cheap: false,
     agency: "extra",
   },
   {
-    name: "Soporte prioritario",
+    name: "Soporte VIP 24/7",
     wpa: true,
     cheap: false,
-    agency: true,
+    agency: "partial",
   },
 ];
 
@@ -180,13 +210,13 @@ export function ComparisonTable() {
                 </tr>
               </thead>
               <tbody>
-                {/* Section: Offre de base */}
+                {/* Section: Pack Esencial */}
                 <tr className="bg-primary/5">
                   <td colSpan={4} className="p-3 font-heading font-bold text-sm md:text-base text-primary">
-                    📦 Offre de base incluse (497€)
+                    ⚡ Pack Esencial (497€)
                   </td>
                 </tr>
-                {baseFeatures.map((feature, i) => (
+                {esencialFeatures.map((feature, i) => (
                   <tr key={i} className="border-b last:border-b-0 hover:bg-muted/30 transition-colors">
                     <td className="p-4 font-medium text-sm md:text-base">
                       {feature.name}
@@ -218,10 +248,10 @@ export function ComparisonTable() {
                   </tr>
                 ))}
                 
-                {/* Section: Options Pro */}
+                {/* Section: Pack Pro */}
                 <tr className="bg-accent/10">
                   <td colSpan={4} className="p-3 font-heading font-bold text-sm md:text-base text-foreground">
-                    ⚡ Pack Pro (797€)
+                    ✨ Pack Pro (797€)
                   </td>
                 </tr>
                 {proFeatures.map((feature, i) => (
