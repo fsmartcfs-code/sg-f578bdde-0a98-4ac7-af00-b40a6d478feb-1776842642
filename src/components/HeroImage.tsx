@@ -29,7 +29,7 @@ export function HeroImage({ src, alt, priority = true }: HeroImageProps) {
           alt={alt}
           fill
           priority={priority}
-          className="object-cover object-center"
+          className="object-contain object-center"
           sizes="(max-width: 1024px) 0vw, (max-width: 1280px) 50vw, 40vw"
           quality={85}
         />
