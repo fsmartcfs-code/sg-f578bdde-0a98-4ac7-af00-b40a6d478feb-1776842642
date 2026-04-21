@@ -27,12 +27,6 @@ const esencialFeatures = [
     agency: true,
   },
   {
-    name: "CRM simple incluido",
-    wpa: true,
-    cheap: false,
-    agency: "complex",
-  },
-  {
     name: "WhatsApp directo integrado",
     wpa: true,
     cheap: true,
@@ -60,13 +54,13 @@ const proFeatures = [
     agency: "partial",
   },
   {
-    name: "Portfolio Pro (5 proyectos destacados)",
+    name: "CRM simple incluido",
     wpa: true,
     cheap: false,
-    agency: true,
+    agency: "complex",
   },
   {
-    name: "Devis IA semi-automáticos",
+    name: "Presupuestos IA semi-automáticos",
     wpa: true,
     cheap: false,
     agency: "extra",
@@ -105,19 +99,13 @@ const premiumFeatures = [
     agency: "partial",
   },
   {
-    name: "Portfolio Ilimitado",
-    wpa: true,
-    cheap: false,
-    agency: true,
-  },
-  {
     name: "Agente IA conversacional",
     wpa: true,
     cheap: false,
     agency: false,
   },
   {
-    name: "Automatización completa devis",
+    name: "Automatización completa presupuestos",
     wpa: true,
     cheap: false,
     agency: "extra",
