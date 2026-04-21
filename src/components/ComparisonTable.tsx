@@ -28,13 +28,13 @@ const features = [
   },
   {
     name: "CRM simple",
-    wpa: true,
+    wpa: "extra",
     cheap: false,
     agency: "complex",
   },
   {
     name: "Devis semi-automatiques",
-    wpa: true,
+    wpa: "extra",
     cheap: false,
     agency: "extra",
   },
