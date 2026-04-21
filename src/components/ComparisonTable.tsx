@@ -52,9 +52,9 @@ const baseFeatures = [
   },
 ];
 
-const advancedFeatures = [
+const proFeatures = [
   {
-    name: "Precio con opciones",
+    name: "Precio con opciones Pro",
     wpa: "797€",
     cheap: "No disponible",
     agency: "3000€+",
@@ -70,6 +70,39 @@ const advancedFeatures = [
     wpa: true,
     cheap: false,
     agency: "extra",
+  },
+];
+
+const premiumFeatures = [
+  {
+    name: "Precio Pack Premium",
+    wpa: "1297€",
+    cheap: "No disponible",
+    agency: "5000€+",
+  },
+  {
+    name: "Todo lo anterior +",
+    wpa: true,
+    cheap: false,
+    agency: "partial",
+  },
+  {
+    name: "Intégration Stripe",
+    wpa: true,
+    cheap: false,
+    agency: "extra",
+  },
+  {
+    name: "Automatisation avancée",
+    wpa: true,
+    cheap: false,
+    agency: "extra",
+  },
+  {
+    name: "Support prioritaire",
+    wpa: true,
+    cheap: false,
+    agency: true,
   },
 ];
 
@@ -144,7 +177,7 @@ export function ComparisonTable() {
                 {/* Section: Offre de base */}
                 <tr className="bg-primary/5">
                   <td colSpan={4} className="p-3 font-heading font-bold text-sm md:text-base text-primary">
-                    📦 Offre de base incluse
+                    📦 Offre de base incluse (497€)
                   </td>
                 </tr>
                 {baseFeatures.map((feature, i) => (
@@ -179,13 +212,51 @@ export function ComparisonTable() {
                   </tr>
                 ))}
                 
-                {/* Section: Options avancées */}
+                {/* Section: Options Pro */}
                 <tr className="bg-accent/10">
                   <td colSpan={4} className="p-3 font-heading font-bold text-sm md:text-base text-foreground">
-                    ⚡ Options avancées (Pack Pro 797€)
+                    ⚡ Pack Pro (797€)
                   </td>
                 </tr>
-                {advancedFeatures.map((feature, i) => (
+                {proFeatures.map((feature, i) => (
+                  <tr key={i} className="border-b last:border-b-0 hover:bg-muted/30 transition-colors">
+                    <td className="p-4 font-medium text-sm md:text-base">
+                      {feature.name}
+                    </td>
+                    <td className="p-4 text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <StatusIcon status={feature.wpa} />
+                        <span className={`text-xs md:text-sm ${typeof feature.wpa === "string" && !["partial", "complex", "extra"].includes(feature.wpa) ? "font-bold text-primary" : "text-muted-foreground"}`}>
+                          <StatusText status={feature.wpa} />
+                        </span>
+                      </div>
+                    </td>
+                    <td className="p-4 text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <StatusIcon status={feature.cheap} />
+                        <span className={`text-xs md:text-sm ${typeof feature.cheap === "string" && !["partial", "complex", "extra"].includes(feature.cheap) ? "font-medium" : "text-muted-foreground"}`}>
+                          <StatusText status={feature.cheap} />
+                        </span>
+                      </div>
+                    </td>
+                    <td className="p-4 text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <StatusIcon status={feature.agency} />
+                        <span className={`text-xs md:text-sm ${typeof feature.agency === "string" && !["partial", "complex", "extra"].includes(feature.agency) ? "font-medium" : "text-muted-foreground"}`}>
+                          <StatusText status={feature.agency} />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+
+                {/* Section: Pack Premium */}
+                <tr className="bg-primary/10">
+                  <td colSpan={4} className="p-3 font-heading font-bold text-sm md:text-base text-primary">
+                    👑 Pack Premium (1297€)
+                  </td>
+                </tr>
+                {premiumFeatures.map((feature, i) => (
                   <tr key={i} className="border-b last:border-b-0 hover:bg-muted/30 transition-colors">
                     <td className="p-4 font-medium text-sm md:text-base">
                       {feature.name}
