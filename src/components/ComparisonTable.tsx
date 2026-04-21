@@ -27,6 +27,12 @@ const esencialFeatures = [
     agency: true,
   },
   {
+    name: "Formulario de contacto para captación de leads",
+    wpa: true,
+    cheap: "partial",
+    agency: true,
+  },
+  {
     name: "WhatsApp directo integrado",
     wpa: true,
     cheap: true,

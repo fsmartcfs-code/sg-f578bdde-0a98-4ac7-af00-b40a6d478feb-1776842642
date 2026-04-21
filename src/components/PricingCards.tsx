@@ -15,6 +15,7 @@ const plans = [
       "Web Profesional Para Autónomos",
       "Widget Reviews (Google/Trustpilot)",
       "Sección Portfolio",
+      "Formulario de contacto para captación de leads",
       "WhatsApp directo integrado",
       "Soporte estándar",
       "La web es tuya forever · Sin cuotas",
