@@ -15,7 +15,7 @@ const baseFeatures = [
     agency: "partial",
   },
   {
-    name: "Captación de leads",
+    name: "Formulario de contacto para captación de leads",
     wpa: true,
     cheap: "partial",
     agency: true,
