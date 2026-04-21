@@ -87,6 +87,12 @@ const premiumFeatures = [
     agency: "partial",
   },
   {
+    name: "Agent IA automatique",
+    wpa: true,
+    cheap: false,
+    agency: false,
+  },
+  {
     name: "Intégration Stripe",
     wpa: true,
     cheap: false,
