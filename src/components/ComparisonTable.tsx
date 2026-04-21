@@ -1,10 +1,10 @@
 import { Card } from "@/components/ui/card";
 import { Check, X, AlertTriangle } from "lucide-react";
 
-const features = [
+const baseFeatures = [
   {
-    name: "Precio",
-    wpa: "497€ - 1297€",
+    name: "Precio base",
+    wpa: "497€",
     cheap: "200€ - 400€",
     agency: "2000€ - 5000€",
   },
@@ -23,18 +23,6 @@ const features = [
   {
     name: "Prueba Social (Reviews)",
     wpa: true,
-    cheap: false,
-    agency: "extra",
-  },
-  {
-    name: "CRM simple",
-    wpa: "extra",
-    cheap: false,
-    agency: "complex",
-  },
-  {
-    name: "Devis semi-automatiques",
-    wpa: "extra",
     cheap: false,
     agency: "extra",
   },
@@ -64,6 +52,27 @@ const features = [
   },
 ];
 
+const advancedFeatures = [
+  {
+    name: "Precio con opciones",
+    wpa: "797€",
+    cheap: "No disponible",
+    agency: "3000€+",
+  },
+  {
+    name: "CRM simple",
+    wpa: true,
+    cheap: false,
+    agency: "complex",
+  },
+  {
+    name: "Devis semi-automatiques",
+    wpa: true,
+    cheap: false,
+    agency: "extra",
+  },
+];
+
 function StatusIcon({ status }: { status: boolean | string }) {
   if (status === true) {
     return <Check className="h-5 w-5 text-primary" />;
@@ -74,7 +83,6 @@ function StatusIcon({ status }: { status: boolean | string }) {
   if (status === "partial" || status === "complex" || status === "extra") {
     return <AlertTriangle className="h-5 w-5 text-amber-500" />;
   }
-  // Pour les prix, pas d'icône
   return null;
 }
 
@@ -84,7 +92,6 @@ function StatusText({ status }: { status: boolean | string }) {
   if (status === "partial") return "Cuotas";
   if (status === "complex") return "Complejo";
   if (status === "extra") return "Pago extra";
-  // Si c'est un string qui n'est pas un des cas ci-dessus, on l'affiche tel quel (pour les prix)
   if (typeof status === "string") return status;
   return "";
 }
@@ -134,7 +141,51 @@ export function ComparisonTable() {
                 </tr>
               </thead>
               <tbody>
-                {features.map((feature, i) => (
+                {/* Section: Offre de base */}
+                <tr className="bg-primary/5">
+                  <td colSpan={4} className="p-3 font-heading font-bold text-sm md:text-base text-primary">
+                    📦 Offre de base incluse
+                  </td>
+                </tr>
+                {baseFeatures.map((feature, i) => (
+                  <tr key={i} className="border-b last:border-b-0 hover:bg-muted/30 transition-colors">
+                    <td className="p-4 font-medium text-sm md:text-base">
+                      {feature.name}
+                    </td>
+                    <td className="p-4 text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <StatusIcon status={feature.wpa} />
+                        <span className={`text-xs md:text-sm ${typeof feature.wpa === "string" && !["partial", "complex", "extra"].includes(feature.wpa) ? "font-bold text-primary" : "text-muted-foreground"}`}>
+                          <StatusText status={feature.wpa} />
+                        </span>
+                      </div>
+                    </td>
+                    <td className="p-4 text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <StatusIcon status={feature.cheap} />
+                        <span className={`text-xs md:text-sm ${typeof feature.cheap === "string" && !["partial", "complex", "extra"].includes(feature.cheap) ? "font-medium" : "text-muted-foreground"}`}>
+                          <StatusText status={feature.cheap} />
+                        </span>
+                      </div>
+                    </td>
+                    <td className="p-4 text-center">
+                      <div className="flex flex-col items-center gap-1">
+                        <StatusIcon status={feature.agency} />
+                        <span className={`text-xs md:text-sm ${typeof feature.agency === "string" && !["partial", "complex", "extra"].includes(feature.agency) ? "font-medium" : "text-muted-foreground"}`}>
+                          <StatusText status={feature.agency} />
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+                
+                {/* Section: Options avancées */}
+                <tr className="bg-accent/10">
+                  <td colSpan={4} className="p-3 font-heading font-bold text-sm md:text-base text-foreground">
+                    ⚡ Options avancées (Pack Pro 797€)
+                  </td>
+                </tr>
+                {advancedFeatures.map((feature, i) => (
                   <tr key={i} className="border-b last:border-b-0 hover:bg-muted/30 transition-colors">
                     <td className="p-4 font-medium text-sm md:text-base">
                       {feature.name}
