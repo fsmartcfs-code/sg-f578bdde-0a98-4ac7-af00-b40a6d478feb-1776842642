@@ -9,8 +9,8 @@ export default function EsencialPage() {
   return (
     <>
       <SEO
-        title="Pack Esencial 697€ HT - Web Profesional Para Autónomos"
-        description="Démarrage simple, impact professionnel. Site web moderne + Reviews + Portfolio. Sin cuotas mensuales. 3 meses modificaciones gratis."
+        title="Pack Esencial 697€ sin IVA - Web Profesional Para Autónomos"
+        description="Inicio simple, impacto profesional. Sitio web moderno + Reviews + Portfolio. Sin cuotas mensuales. 3 meses modificaciones gratis."
       />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -26,7 +26,7 @@ export default function EsencialPage() {
 
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <Badge className="bg-primary hover:bg-primary text-primary-foreground font-semibold px-4 py-2">
-                SANS FRAIS MENSUELS
+                SIN CUOTAS MENSUALES
               </Badge>
               
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold">
@@ -34,7 +34,7 @@ export default function EsencialPage() {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Tu web profesional a 697€ HT
+                Tu web profesional a 697€ sin IVA
               </p>
 
               <div className="flex items-baseline justify-center gap-2">
@@ -68,7 +68,7 @@ export default function EsencialPage() {
           </div>
         </section>
 
-        {/* Qui c'est pour ? */}
+        {/* ¿Para quién es? */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -79,10 +79,10 @@ export default function EsencialPage() {
                   </div>
                   <div>
                     <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">
-                      ¿Qui c'est pour ?
+                      ¿Para quién es?
                     </h2>
                     <p className="text-lg text-muted-foreground">
-                      Eres independiente o TPE, quieres una vitrina profesional en línea sin arruinarte. Sin complejidad innecesaria, solo lo esencial.
+                      Eres autónomo o pequeña empresa, quieres una vitrina profesional en línea sin arruinarte. Sin complejidad innecesaria, solo lo esencial.
                     </p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export default function EsencialPage() {
           </div>
         </section>
 
-        {/* Features détaillées */}
+        {/* Features detalladas */}
         <section className="py-16 md:py-20">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -103,33 +103,33 @@ export default function EsencialPage() {
                 {[
                   {
                     icon: Check,
-                    title: "Site web professionnel",
-                    description: "Design moderne et responsive, optimisé pour la conversion"
+                    title: "Sitio web profesional",
+                    description: "Diseño moderno y responsive, optimizado para la conversión"
                   },
                   {
                     icon: Check,
                     title: "Widget Reviews",
-                    description: "Affiche tes avis clients Google/Trustpilot pour générer confiance"
+                    description: "Muestra tus opiniones de clientes de Google/Trustpilot para generar confianza"
                   },
                   {
                     icon: Check,
-                    title: "Portfolio ou galerie",
-                    description: "Montre tes meilleurs travaux et projets réalisés"
+                    title: "Portfolio o galería",
+                    description: "Muestra tus mejores trabajos y proyectos realizados"
                   },
                   {
                     icon: Check,
-                    title: "Formulaire de contact",
-                    description: "Capture des leads qualifiés avec formulaire avancé"
+                    title: "Formulario de contacto",
+                    description: "Captura leads cualificados con formulario avanzado"
                   },
                   {
                     icon: Check,
-                    title: "Intégration WhatsApp",
-                    description: "Bouton WhatsApp visible pour contact immédiat"
+                    title: "Integración WhatsApp",
+                    description: "Botón WhatsApp visible para contacto inmediato"
                   },
                   {
                     icon: Check,
-                    title: "Hébergement compris",
-                    description: "3 premiers mois d'hébergement inclus dans le prix"
+                    title: "Alojamiento incluido",
+                    description: "3 primeros meses de alojamiento incluidos en el precio"
                   },
                 ].map((feature, i) => (
                   <Card key={i} className="p-6">
@@ -153,12 +153,12 @@ export default function EsencialPage() {
           </div>
         </section>
 
-        {/* Ce qui est inclus */}
+        {/* Lo que está incluido */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
-                Ce qui est inclus
+                Lo que está incluido
               </h2>
 
               <Card className="p-8 md:p-12">
@@ -167,10 +167,10 @@ export default function EsencialPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Durée de réalisation : ~7 jours
+                        Duración de realización: ~7 días
                       </h3>
                       <p className="text-muted-foreground">
-                        De la commande à la mise en ligne complète
+                        Desde el pedido hasta la puesta en línea completa
                       </p>
                     </div>
                   </div>
@@ -179,10 +179,10 @@ export default function EsencialPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        3 mois de modifications gratuites
+                        3 meses de modificaciones gratuitas
                       </h3>
                       <p className="text-muted-foreground">
-                        Jusqu'à 10 modifications pendant les 3 premiers mois
+                        Hasta 10 modificaciones durante los 3 primeros meses
                       </p>
                     </div>
                   </div>
@@ -191,17 +191,17 @@ export default function EsencialPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Hébergement compris (3 mois)
+                        Alojamiento incluido (3 meses)
                       </h3>
                       <p className="text-muted-foreground">
-                        Après : hébergement gratuit (Vercel) ou ~20€/mois ailleurs
+                        Después: alojamiento gratuito (Vercel) o ~20€/mes en otro lugar
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
                     <p className="text-sm text-amber-900">
-                      <strong>Après les 3 premiers mois :</strong> Les modifications additionnelles sont facturées à 80€/heure. Le domaine est à ta charge (~12€/an).
+                      <strong>Después de los 3 primeros meses:</strong> Las modificaciones adicionales se facturan a 80€/hora. El dominio corre a tu cargo (~12€/año).
                     </p>
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function EsencialPage() {
           </div>
         </section>
 
-        {/* Après l'Esencial */}
+        {/* Después del Esencial */}
         <section className="py-16 md:py-20">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -225,7 +225,7 @@ export default function EsencialPage() {
                   </h2>
                   
                   <p className="text-lg text-muted-foreground">
-                    Besoin de plus ? Découvre le Pack Pro avec CRM et devis IA, ou upgrade vers l'IA Upgrade pour l'automatisation.
+                    ¿Necesitas más? Descubre el Pack Pro con CRM y presupuestos IA, o mejora al IA Upgrade para la automatización.
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -255,7 +255,7 @@ export default function EsencialPage() {
               </h2>
               
               <p className="text-lg md:text-xl opacity-90">
-                Reserva una llamada o escríbenos por WhatsApp para empezar tu proyecto.
+                Reserva una llamada o escríbenos por WhatsApp para comenzar tu proyecto.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
