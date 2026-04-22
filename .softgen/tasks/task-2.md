@@ -13,13 +13,13 @@ position: 1
 Mettre à jour la page d'accueil avec nouveaux prix HT, tableau de comparaison des 4 offres, et section Offre Partenaire. Tous les prix passent en HT (base imponible). Chaque offre doit avoir un lien vers sa page dédiée.
 
 ## Checklist
-- [ ] Mettre à jour PricingCards avec nouveaux prix HT (697€, 1097€, 997€ IA, 1997€)
-- [ ] Créer composant ComparisonTable avec les 4 offres côte à côte
-- [ ] Ajouter badge "SANS FRAIS MENSUELS" sur chaque offre
-- [ ] Ajouter CTAs "Découvrir les détails" pointant vers pages dédiées
-- [ ] Créer section "Offre Partenaire/Apporteur d'affaires"
-- [ ] Mettre à jour index.tsx avec nouvelle structure
-- [ ] Ajouter texte explicatif après tableau comparatif
+- [x] Mettre à jour PricingCards avec nouveaux prix HT (697€, 1097€, 997€ IA, 1997€)
+- [x] Créer composant ComparisonTable avec les 4 offres côte à côte
+- [x] Ajouter badge "SANS FRAIS MENSUELS" sur chaque offre
+- [x] Ajouter CTAs "Découvrir les détails" pointant vers pages dédiées
+- [x] Créer section "Offre Partenaire/Apporteur d'affaires"
+- [x] Mettre à jour index.tsx avec nouvelle structure
+- [x] Ajouter texte explicatif après tableau comparatif
 
 ## Acceptance
 - Les 4 offres sont comparables en un coup d'œil sur la home

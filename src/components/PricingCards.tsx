@@ -2,31 +2,31 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, Sparkles, Crown, Zap } from "lucide-react";
+import { Check, Sparkles, Crown, Zap, Bot } from "lucide-react";
 
 const plans = [
   {
     name: "Esencial",
-    price: "497",
-    originalPrice: "697",
+    price: "697",
+    slug: "esencial",
     icon: Zap,
     description: "Perfecto para empezar a convertir visitas en clientes",
     features: [
       "Web Profesional Para Autónomos",
       "Widget Reviews (Google/Trustpilot)",
       "Sección Portfolio",
-      "Formulario de contacto para captación de leads",
+      "Formulario de contacto",
       "WhatsApp directo integrado",
-      "Soporte estándar",
-      "La web es tuya forever · Sin cuotas",
+      "3 meses modificaciones gratis",
+      "Sin cuotas mensuales",
     ],
-    cta: "Empezar ahora",
+    cta: "Ver detalles",
     popular: false,
   },
   {
     name: "Pro",
-    price: "797",
-    originalPrice: null,
+    price: "1097",
+    slug: "pro",
     icon: Sparkles,
     description: "La opción más completa para autónomos serios",
     features: [
@@ -34,30 +34,47 @@ const plans = [
       "CRM simple incluido",
       "Presupuestos IA semi-automáticos",
       "Kit Digital incluido",
-      "Formulario de contacto avanzado",
       "Integración Calendly Premium",
-      "Soporte prioritario",
-      "La web es tuya forever · Sin cuotas",
+      "3 meses modificaciones gratis",
+      "Sin cuotas mensuales",
     ],
-    cta: "Elegir Pro",
+    cta: "Ver detalles",
     popular: true,
   },
   {
+    name: "IA Upgrade",
+    price: "997",
+    slug: "ia-upgrade",
+    icon: Bot,
+    description: "Agente IA conversacional para tu sitio existente",
+    features: [
+      "Agent IA Dispatcher 24/7",
+      "CRM simple automatizado",
+      "Base de conocimiento FAQ",
+      "Integraciones WhatsApp/Email",
+      "Requiere sitio web existente",
+      "3 meses modificaciones gratis",
+      "Sin cuotas mensuales",
+    ],
+    cta: "Ver detalles",
+    popular: false,
+  },
+  {
     name: "Premium",
-    price: "1297",
-    originalPrice: null,
+    price: "1997",
+    slug: "premium",
     icon: Crown,
     description: "Solución completa con agente IA y soporte VIP",
     features: [
       "Todo lo de Pro +",
-      "Agente IA conversacional",
+      "Agente IA conversacional avanzado",
       "Automatización completa presupuestos",
       "CRM avanzado con seguimiento",
       "Integraciones personalizadas",
       "Soporte VIP 24/7",
-      "La web es tuya forever · Sin cuotas",
+      "Sin cuotas mensuales",
     ],
-    cta: "Ir a Premium",
+    cta: "Ver detalles",
     popular: false,
   },
 ];
@@ -71,22 +88,25 @@ export function PricingCards() {
             Elige tu plan
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Precios transparentes, sin sorpresas. Todos los planes incluyen setup completo en 7 días.
+            Precios transparentes, sin sorpresas. Todos los planes incluyen setup completo.
           </p>
-          <p className="text-base font-semibold text-primary">
-            Pago único · La web es tuya forever · Sin cuotas mensuales
+          <Badge className="bg-primary hover:bg-primary text-primary-foreground font-semibold px-4 py-2 text-base">
+            SANS FRAIS MENSUELS
+          </Badge>
+          <p className="text-sm text-muted-foreground mt-2">
+            ✅ Toutes les offres incluent : hébergement compris (3 mois), 3 mois de modifications gratuites, la web es tuya forever
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {plans.map((plan) => {
             const Icon = plan.icon;
             return (
               <Card
                 key={plan.name}
-                className={`relative p-8 space-y-6 border-2 ${
+                className={`relative p-6 space-y-5 border-2 ${
                   plan.popular
-                    ? "border-primary shadow-xl scale-105"
+                    ? "border-primary shadow-xl"
                     : "hover:border-primary transition-colors"
                 }`}
               >
@@ -96,44 +116,35 @@ export function PricingCards() {
                   </Badge>
                 )}
 
-                <div className="space-y-3">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Icon className="h-6 w-6 text-primary" />
+                <div className="space-y-2">
+                  <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <Icon className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="font-heading text-2xl font-bold">
+                  <h3 className="font-heading text-xl font-bold">
                     {plan.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs text-muted-foreground">
                     {plan.description}
                   </p>
                 </div>
 
                 <div className="space-y-1">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-4xl font-heading font-bold text-primary">
+                  <div className="flex items-baseline gap-1">
+                    <span className="text-3xl font-heading font-bold text-primary">
                       {plan.price}€
                     </span>
-                    {plan.originalPrice && (
-                      <span className="text-xl text-muted-foreground line-through">
-                        {plan.originalPrice}€
-                      </span>
-                    )}
+                    <span className="text-sm text-muted-foreground">HT</span>
                   </div>
                   <p className="text-xs font-medium text-primary">
                     Pago único · Sin cuotas
                   </p>
-                  {plan.originalPrice && (
-                    <p className="text-xs text-muted-foreground">
-                      Oferta válida 7 días
-                    </p>
-                  )}
                 </div>
 
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm">
-                      <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                      <span className={feature.includes("forever") ? "font-semibold" : ""}>
+                    <li key={i} className="flex items-start gap-2 text-xs">
+                      <Check className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                      <span className={feature.includes("Sin cuotas") ? "font-semibold" : ""}>
                         {feature}
                       </span>
                     </li>
@@ -141,12 +152,12 @@ export function PricingCards() {
                 </ul>
 
                 <Button
-                  size="lg"
-                  className="w-full font-semibold"
+                  size="default"
+                  className="w-full font-semibold text-sm"
                   variant={plan.popular ? "default" : "outline"}
                   asChild
                 >
-                  <Link href="https://calendly.com/webparaautonomos" target="_blank">
+                  <Link href={`/${plan.slug}`}>
                     {plan.cta}
                   </Link>
                 </Button>
