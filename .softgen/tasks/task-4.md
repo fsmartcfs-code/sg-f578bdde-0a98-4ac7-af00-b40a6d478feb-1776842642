@@ -1,6 +1,6 @@
 ---
 title: Créer page dédiée Pack Pro
-status: todo
+status: done
 priority: high
 type: feature
 tags: [pro, pricing-page]

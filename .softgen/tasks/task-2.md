@@ -1,6 +1,6 @@
 ---
 title: Restructurer page d'accueil - Comparaison offres
-status: in_progress
+status: done
 priority: high
 type: feature
 tags: [pricing, homepage, comparison]
@@ -10,7 +10,7 @@ position: 1
 ---
 
 ## Notes
-Mettre à jour la page d'accueil avec nouveaux prix HT, tableau de comparaison des 4 offres, et section Offre Partenaire. Tous les prix passent en HT (base imponible). Chaque offre doit avoir un lien vers sa page dédiée.
+Mettre à jour la page d'accueil avec nouveaux prix HT, tableau de comparaison des 4 offres, et section Offre Partenaire. Tous les prix passent en HT (base imposable). Chaque offre doit avoir un lien vers sa page dédiée.
 
 ## Checklist
 - [x] Mettre à jour PricingCards avec nouveaux prix HT (697€, 1097€, 997€ IA, 1997€)

@@ -1,6 +1,6 @@
 ---
 title: Créer page dédiée IA Upgrade
-status: todo
+status: done
 priority: high
 type: feature
 tags: [ia-upgrade, pricing-page]
