@@ -9,8 +9,8 @@ export default function PremiumPage() {
   return (
     <>
       <SEO
-        title="Pack Premium 1997€ HT - Solution Complète Site + IA + CRM"
-        description="La solution expert : Site professionnel + Agent IA avancé + CRM avancé + Support VIP 24/7. Externalise ton commercial complètement. Sin cuotas mensuales."
+        title="Pack Premium 1997€ sin IVA - Solución Completa Sitio + IA + CRM"
+        description="La solución experta: Sitio profesional + Agente IA avanzado + CRM avanzado + Coaching completo. Externaliza tu comercial completamente. Sin cuotas mensuales."
       />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -26,7 +26,7 @@ export default function PremiumPage() {
 
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <Badge className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold px-4 py-2 border-0">
-                SOLUTION VIP · SANS FRAIS MENSUELS
+                SOLUCIÓN VIP · SIN CUOTAS MENSUALES
               </Badge>
               
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold">
@@ -34,7 +34,7 @@ export default function PremiumPage() {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Solution Complète (1997€ HT)
+                Solución Completa (1997€ sin IVA)
               </p>
 
               <div className="flex items-baseline justify-center gap-2">
@@ -68,7 +68,7 @@ export default function PremiumPage() {
           </div>
         </section>
 
-        {/* Qui c'est pour ? */}
+        {/* ¿Para quién es? */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -79,7 +79,7 @@ export default function PremiumPage() {
                   </div>
                   <div>
                     <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">
-                      ¿Qui c'est pour ?
+                      ¿Para quién es?
                     </h2>
                     <p className="text-lg text-muted-foreground">
                       Quieres la solución experta: una web ultra-completa, un agente de IA que hace el trabajo comercial por ti, un CRM que lo gestiona todo. Pagas una vez y tienes una máquina comercial.
@@ -91,7 +91,7 @@ export default function PremiumPage() {
           </div>
         </section>
 
-        {/* Features détaillées */}
+        {/* Features detalladas */}
         <section className="py-16 md:py-20">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -104,42 +104,37 @@ export default function PremiumPage() {
                   {
                     icon: Check,
                     title: "Todo del Pack Pro",
-                    description: "Site + CRM + Devis IA + Kit Digital + Calendly Premium"
+                    description: "Sitio + CRM + Presupuestos IA + Kit Digital + Calendly Premium"
                   },
                   {
                     icon: Check,
-                    title: "Agent IA conversationnel avancé",
-                    description: "Dispatcher 24/7 avec qualification poussée et scénarios personnalisés"
+                    title: "Agente IA conversacional avanzado",
+                    description: "Dispatcher 24/7 con cualificación avanzada y escenarios personalizados"
                   },
                   {
                     icon: Check,
-                    title: "Automatisation complète des devis",
-                    description: "Devis générés et envoyés quasi sans intervention humaine"
+                    title: "Automatización completa de presupuestos",
+                    description: "Presupuestos generados y enviados casi sin intervención humana"
                   },
                   {
                     icon: Check,
-                    title: "CRM avancé",
-                    description: "Pipeline complet, forecasting simple, automatisation des relances"
+                    title: "CRM avanzado",
+                    description: "Pipeline completo, previsión simple, automatización de recordatorios"
                   },
                   {
                     icon: Check,
-                    title: "Intégrations personnalisées",
-                    description: "Connecte tes outils existants (facturation, compta, etc.)"
+                    title: "Integraciones personalizadas",
+                    description: "Conecta tus herramientas existentes (facturación, contabilidad, etc.)"
                   },
                   {
                     icon: Check,
-                    title: "Support VIP 24/7",
-                    description: "Priorité absolue, réponse en moins de 2h, assistance dédiée"
+                    title: "Coaching inicial completo",
+                    description: "Formación en profundidad sobre cada herramienta y proceso"
                   },
                   {
                     icon: Check,
-                    title: "Coaching initial complet",
-                    description: "Formation approfondie sur chaque outil et process"
-                  },
-                  {
-                    icon: Check,
-                    title: "Partenaire expert dédié",
-                    description: "Un expert dédié pour gérer la complexité de ton projet"
+                    title: "Socio experto dedicado",
+                    description: "Un experto dedicado para gestionar la complejidad de tu proyecto"
                   },
                 ].map((feature, i) => (
                   <Card key={i} className="p-6">
@@ -163,12 +158,12 @@ export default function PremiumPage() {
           </div>
         </section>
 
-        {/* Cas d'usage complet */}
+        {/* Caso de uso completo */}
         <section className="py-16 md:py-20 bg-gradient-to-br from-primary/5 to-background">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-8">
-                Cas d'usage complet
+                Caso de uso completo
               </h2>
               
               <Card className="p-8 md:p-12 border-2">
@@ -179,10 +174,10 @@ export default function PremiumPage() {
                     </div>
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Exemple plombier complet
+                        Ejemplo fontanero completo
                       </h3>
                       <p className="text-muted-foreground">
-                        Automatisation commerciale de bout en bout
+                        Automatización comercial de principio a fin
                       </p>
                     </div>
                   </div>
@@ -191,56 +186,56 @@ export default function PremiumPage() {
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">1.</span>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Client contacte via WhatsApp</strong> → Bot IA prend le relais
+                        <strong>Cliente contacta vía WhatsApp</strong> → Bot IA toma el control
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">2.</span>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Bot qualifie automatiquement</strong> : type de problème, urgence, zone, photos
+                        <strong>Bot cualifica automáticamente</strong>: tipo de problema, urgencia, zona, fotos
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">3.</span>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Devis généré automatiquement</strong> basé sur la qualification
+                        <strong>Presupuesto generado automáticamente</strong> basado en la cualificación
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">4.</span>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Créneau proposé via Calendly</strong> selon disponibilités réelles
+                        <strong>Horario propuesto vía Calendly</strong> según disponibilidades reales
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">5.</span>
                       <p className="text-sm text-muted-foreground">
-                        <strong>RDV confirmé automatiquement</strong> dans ton agenda + rappels SMS
+                        <strong>Cita confirmada automáticamente</strong> en tu agenda + recordatorios SMS
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">6.</span>
                       <p className="text-sm text-muted-foreground">
-                        <strong>CRM met à jour l'historique client</strong> et le pipeline commercial
+                        <strong>CRM actualiza el historial del cliente</strong> y el pipeline comercial
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">7.</span>
                       <p className="text-sm text-muted-foreground">
-                        <strong>Relances automatiques</strong> si pas de réponse en 48h
+                        <strong>Recordatorios automáticos</strong> si no hay respuesta en 48h
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-primary/5 rounded-lg p-4 mt-6">
                     <p className="text-sm text-foreground text-center font-medium">
-                      💪 <strong>Tu te concentres sur la prestation, pas sur l'admin.</strong> L'IA et le CRM gèrent tout.
+                      💪 <strong>Tú te concentras en la prestación, no en la administración.</strong> La IA y el CRM gestionan todo.
                     </p>
                   </div>
                 </div>
@@ -249,12 +244,12 @@ export default function PremiumPage() {
           </div>
         </section>
 
-        {/* Ce qui est inclus */}
+        {/* Lo que está incluido */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
-                Ce qui est inclus
+                Lo que está incluido
               </h2>
 
               <Card className="p-8 md:p-12">
@@ -263,10 +258,10 @@ export default function PremiumPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Durée de réalisation : ~15-20 jours
+                        Duración de realización: ~15-20 días
                       </h3>
                       <p className="text-muted-foreground">
-                        Configuration complète + optimisation + tests approfondis
+                        Configuración completa + optimización + pruebas en profundidad
                       </p>
                     </div>
                   </div>
@@ -275,10 +270,10 @@ export default function PremiumPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Partenaire expert pour la complexité
+                        Socio experto para la complejidad
                       </h3>
                       <p className="text-muted-foreground">
-                        Un expert dédié gère l'ensemble de ton projet de A à Z
+                        Un experto dedicado gestiona todo tu proyecto de A a Z
                       </p>
                     </div>
                   </div>
@@ -287,10 +282,10 @@ export default function PremiumPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Tout pré-configuré et optimisé
+                        Todo pre-configurado y optimizado
                       </h3>
                       <p className="text-muted-foreground">
-                        Livré opérationnel : scénarios IA, pipeline CRM, templates devis
+                        Entregado operacional: escenarios IA, pipeline CRM, plantillas de presupuestos
                       </p>
                     </div>
                   </div>
@@ -299,10 +294,10 @@ export default function PremiumPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        3 mois de support VIP gratuit
+                        3 meses de modificaciones gratuitas
                       </h3>
                       <p className="text-muted-foreground">
-                        Assistance prioritaire, optimisations, ajustements illimités
+                        Optimizaciones, ajustes ilimitados durante los 3 primeros meses
                       </p>
                     </div>
                   </div>
@@ -311,23 +306,23 @@ export default function PremiumPage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Formation complète sur chaque outil
+                        Formación completa sobre cada herramienta
                       </h3>
                       <p className="text-muted-foreground">
-                        Coaching approfondi pour maîtriser toute la stack
+                        Coaching en profundidad para dominar todo el stack
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                     <p className="text-sm text-blue-900">
-                      <strong>Note :</strong> La durée peut augmenter selon la complexité. Un appel de discovery est requis pour clarifier le scope exact.
+                      <strong>Nota:</strong> La duración puede aumentar según la complejidad. Se requiere una llamada de discovery para aclarar el alcance exacto.
                     </p>
                   </div>
 
                   <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
                     <p className="text-sm text-amber-900">
-                      <strong>Après les 3 mois :</strong> Support VIP maintenu à tarif préférentiel. Hébergement gratuit (Vercel) ou ~20€/mois. Domaine à ta charge (~12€/an).
+                      <strong>Después de los 3 meses:</strong> Modificaciones a 80€/hora. Alojamiento gratuito (Vercel) o ~20€/mes. Dominio a tu cargo (~12€/año).
                     </p>
                   </div>
                 </div>
@@ -336,7 +331,7 @@ export default function PremiumPage() {
           </div>
         </section>
 
-        {/* Avantage Premium */}
+        {/* Ventaja Premium */}
         <section className="py-16 md:py-20 bg-gradient-to-br from-amber-50/50 to-background">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -347,25 +342,25 @@ export default function PremiumPage() {
                   </div>
                   
                   <h2 className="font-heading text-2xl md:text-3xl font-bold">
-                    Avantage Premium
+                    Ventaja Premium
                   </h2>
                   
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    C'est la solution pour qui veut vraiment <strong>externaliser son commercial</strong>. Tu peux vendre, tu peux prospecter, tu peux te concentrer sur ton métier. L'IA et l'admin, c'est du passé.
+                    Es la solución para quien quiere realmente <strong>externalizar su comercial</strong>. Puedes vender, puedes prospectar, puedes concentrarte en tu oficio. La IA y la administración, es cosa del pasado.
                   </p>
 
                   <div className="grid sm:grid-cols-3 gap-4 pt-6">
                     <div className="p-4 bg-white rounded-lg border border-amber-200">
                       <div className="text-3xl font-heading font-bold text-primary mb-1">24/7</div>
-                      <div className="text-sm text-muted-foreground">Disponibilité IA</div>
+                      <div className="text-sm text-muted-foreground">Disponibilidad IA</div>
                     </div>
                     <div className="p-4 bg-white rounded-lg border border-amber-200">
                       <div className="text-3xl font-heading font-bold text-primary mb-1">-80%</div>
-                      <div className="text-sm text-muted-foreground">Temps admin</div>
+                      <div className="text-sm text-muted-foreground">Tiempo admin</div>
                     </div>
                     <div className="p-4 bg-white rounded-lg border border-amber-200">
                       <div className="text-3xl font-heading font-bold text-primary mb-1">VIP</div>
-                      <div className="text-sm text-muted-foreground">Support prioritaire</div>
+                      <div className="text-sm text-muted-foreground">Coaching completo</div>
                     </div>
                   </div>
                 </div>
@@ -383,14 +378,14 @@ export default function PremiumPage() {
               </h2>
               
               <p className="text-lg md:text-xl opacity-90">
-                Le Pack Premium est fait pour toi. Réserve un appel de discovery pour clarifier ton projet.
+                El Pack Premium está hecho para ti. Reserva una llamada de discovery para aclarar tu proyecto.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="secondary" className="text-base font-semibold" asChild>
                   <Link href="https://calendly.com/webparaautonomos" target="_blank">
                     <Calendar className="mr-2 h-5 w-5" />
-                    Appel discovery requis
+                    Llamada discovery requerida
                   </Link>
                 </Button>
                 <Button size="lg" className="text-base font-semibold bg-[#25D366] hover:bg-[#20BA5A] text-white border-0" asChild>

@@ -9,8 +9,8 @@ export default function IAUpgradePage() {
   return (
     <>
       <SEO
-        title="IA Upgrade 997€ HT - Agent IA Conversationnel 24/7"
-        description="Ajoute un agent IA dispatcher à ton site existant. Qualification automatique, CRM intégré, disponible 24/7. Sin cuotas mensuales."
+        title="IA Upgrade 997€ sin IVA - Agente IA Conversacional 24/7"
+        description="Añade un agente IA dispatcher a tu sitio existente. Cualificación automática, CRM integrado, disponible 24/7. Sin cuotas mensuales."
       />
       <main className="min-h-screen">
         {/* Hero Section */}
@@ -26,7 +26,7 @@ export default function IAUpgradePage() {
 
             <div className="max-w-3xl mx-auto text-center space-y-6">
               <Badge className="bg-primary hover:bg-primary text-primary-foreground font-semibold px-4 py-2">
-                SANS FRAIS MENSUELS
+                SIN CUOTAS MENSUALES
               </Badge>
               
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold">
@@ -34,7 +34,7 @@ export default function IAUpgradePage() {
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Agent Conversationnel 24/7 (997€ HT)
+                Agente Conversacional 24/7 (997€ sin IVA)
               </p>
 
               <div className="flex items-baseline justify-center gap-2">
@@ -54,7 +54,7 @@ export default function IAUpgradePage() {
                 <div className="flex items-start gap-3">
                   <AlertCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
                   <p className="text-sm text-blue-900 text-left">
-                    <strong>Prérequis :</strong> Tu dois avoir un site web fonctionnel (créé par toi, une agence, ou nous).
+                    <strong>Requisito previo:</strong> Debes tener un sitio web funcional (creado por ti, una agencia o nosotros).
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function IAUpgradePage() {
           </div>
         </section>
 
-        {/* Qui c'est pour ? */}
+        {/* ¿Para quién es? */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -88,7 +88,7 @@ export default function IAUpgradePage() {
                   </div>
                   <div>
                     <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4">
-                      ¿Qui c'est pour ?
+                      ¿Para quién es?
                     </h2>
                     <p className="text-lg text-muted-foreground">
                       Ya tienes un sitio web (creado por otra persona o hace tiempo) y quieres añadir un agente de IA conversacional que responda 24/7 a tus clientes potenciales. Imagina un vendedor que nunca duerme.
@@ -100,45 +100,45 @@ export default function IAUpgradePage() {
           </div>
         </section>
 
-        {/* Features détaillées */}
+        {/* Features detalladas */}
         <section className="py-16 md:py-20">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
-                Qué incluye l'IA Upgrade
+                Qué incluye el IA Upgrade
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
                     icon: Check,
-                    title: "Agent IA Dispatcher 24/7",
-                    description: "Qualifie et oriente les demandes automatiquement, même la nuit"
+                    title: "Agente IA Dispatcher 24/7",
+                    description: "Cualifica y orienta las solicitudes automáticamente, incluso de noche"
                   },
                   {
                     icon: Check,
-                    title: "CRM simple automatisé",
-                    description: "Trace toutes les conversations et enregistre les leads qualifiés"
+                    title: "CRM simple automatizado",
+                    description: "Rastrea todas las conversaciones y registra los leads cualificados"
                   },
                   {
                     icon: Check,
-                    title: "Base de connaissance FAQ",
-                    description: "L'agent répond aux questions fréquentes sur tes services"
+                    title: "Base de conocimiento FAQ",
+                    description: "El agente responde a preguntas frecuentes sobre tus servicios"
                   },
                   {
                     icon: Check,
-                    title: "Intégrations WhatsApp/Email",
-                    description: "Notifie les demandes urgentes sur WhatsApp en temps réel"
+                    title: "Integraciones WhatsApp/Email",
+                    description: "Notifica las solicitudes urgentes en WhatsApp en tiempo real"
                   },
                   {
                     icon: Check,
-                    title: "Configuration sans code",
-                    description: "Interface simple pour configurer les réponses de l'agent"
+                    title: "Configuración sin código",
+                    description: "Interfaz simple para configurar las respuestas del agente"
                   },
                   {
                     icon: Check,
-                    title: "Formation incluse",
-                    description: "Appel de formation pour maîtriser l'outil rapidement"
+                    title: "Formación incluida",
+                    description: "Llamada de formación para dominar la herramienta rápidamente"
                   },
                 ].map((feature, i) => (
                   <Card key={i} className="p-6">
@@ -162,12 +162,12 @@ export default function IAUpgradePage() {
           </div>
         </section>
 
-        {/* Cas d'usage concret */}
+        {/* Caso de uso concreto */}
         <section className="py-16 md:py-20 bg-gradient-to-br from-primary/5 to-background">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-8">
-                Cas d'usage concret
+                Caso de uso concreto
               </h2>
               
               <Card className="p-8 md:p-12 border-2">
@@ -178,10 +178,10 @@ export default function IAUpgradePage() {
                     </div>
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Exemple : Un plombier
+                        Ejemplo: Un fontanero
                       </h3>
                       <p className="text-muted-foreground">
-                        Le client demande sur le chat : <em>"Tengo una fuga urgente en la cocina"</em>
+                        El cliente pregunta en el chat: <em>"Tengo una fuga urgente en la cocina"</em>
                       </p>
                     </div>
                   </div>
@@ -190,42 +190,42 @@ export default function IAUpgradePage() {
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">1.</span>
                       <p className="text-sm text-muted-foreground">
-                        L'agent IA demande automatiquement : <em>"¿En qué zona estás?"</em>
+                        El agente IA pregunta automáticamente: <em>"¿En qué zona estás?"</em>
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">2.</span>
                       <p className="text-sm text-muted-foreground">
-                        Vérifie ta disponibilité dans ton agenda Calendly
+                        Verifica tu disponibilidad en tu agenda Calendly
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">3.</span>
                       <p className="text-sm text-muted-foreground">
-                        Propose un créneau : <em>"Puedo pasar mañana a las 10h"</em>
+                        Propone un horario: <em>"Puedo pasar mañana a las 10h"</em>
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">4.</span>
                       <p className="text-sm text-muted-foreground">
-                        T'envoie une alerte WhatsApp : <em>"Cliente urgente: fuga en cocina, zona X, confirmado 10h"</em>
+                        Te envía una alerta WhatsApp: <em>"Cliente urgente: fuga en cocina, zona X, confirmado 10h"</em>
                       </p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <span className="font-bold text-primary shrink-0">5.</span>
                       <p className="text-sm text-muted-foreground">
-                        Le client reçoit la confirmation automatiquement
+                        El cliente recibe la confirmación automáticamente
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-primary/5 rounded-lg p-4 mt-6">
                     <p className="text-sm text-foreground text-center font-medium">
-                      🌙 <strong>Pendant ce temps, tu dors.</strong> L'agent IA a tout géré.
+                      🌙 <strong>Mientras tanto, tú duermes.</strong> El agente IA ha gestionado todo.
                     </p>
                   </div>
                 </div>
@@ -234,12 +234,12 @@ export default function IAUpgradePage() {
           </div>
         </section>
 
-        {/* Ce qui est inclus */}
+        {/* Lo que está incluido */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
-                Ce qui est inclus
+                Lo que está incluido
               </h2>
 
               <Card className="p-8 md:p-12">
@@ -248,10 +248,10 @@ export default function IAUpgradePage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Durée de réalisation : ~10 jours
+                        Duración de realización: ~10 días
                       </h3>
                       <p className="text-muted-foreground">
-                        Intégration complète sur ton site existant + configuration
+                        Integración completa en tu sitio existente + configuración
                       </p>
                     </div>
                   </div>
@@ -260,10 +260,10 @@ export default function IAUpgradePage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Configuration complète de l'agent
+                        Configuración completa del agente
                       </h3>
                       <p className="text-muted-foreground">
-                        Base de connaissance, scénarios de qualification, intégrations
+                        Base de conocimiento, escenarios de cualificación, integraciones
                       </p>
                     </div>
                   </div>
@@ -272,10 +272,10 @@ export default function IAUpgradePage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        Formation rapide incluse
+                        Formación rápida incluida
                       </h3>
                       <p className="text-muted-foreground">
-                        Appel de formation pour maîtriser l'outil et ajuster les réponses
+                        Llamada de formación para dominar la herramienta y ajustar las respuestas
                       </p>
                     </div>
                   </div>
@@ -284,17 +284,17 @@ export default function IAUpgradePage() {
                     <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-heading font-bold text-lg mb-2">
-                        3 mois de modifications gratuites
+                        3 meses de modificaciones gratuitas
                       </h3>
                       <p className="text-muted-foreground">
-                        Ajustements des scénarios, réponses, intégrations
+                        Ajustes de los escenarios, respuestas, integraciones
                       </p>
                     </div>
                   </div>
 
                   <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
                     <p className="text-sm text-amber-900">
-                      <strong>Prérequis :</strong> Site web fonctionnel requis. Après les 3 mois : modifications à 80€/heure.
+                      <strong>Requisito previo:</strong> Sitio web funcional requerido. Después de los 3 meses: modificaciones a 80€/hora.
                     </p>
                   </div>
                 </div>
@@ -303,7 +303,7 @@ export default function IAUpgradePage() {
           </div>
         </section>
 
-        {/* Après l'IA Upgrade */}
+        {/* Después del IA Upgrade */}
         <section className="py-16 md:py-20">
           <div className="container">
             <div className="max-w-4xl mx-auto">
@@ -318,7 +318,7 @@ export default function IAUpgradePage() {
                   </h2>
                   
                   <p className="text-lg text-muted-foreground">
-                    Veux la solution ultra-complète ? Passe au Pack Premium : IA avancé + CRM avancé + support VIP 24/7.
+                    ¿Quieres la solución ultra-completa? Pasa al Pack Premium: IA avanzado + CRM avanzado + coaching completo.
                   </p>
 
                   <div className="flex justify-center pt-4">
@@ -343,7 +343,7 @@ export default function IAUpgradePage() {
               </h2>
               
               <p className="text-lg md:text-xl opacity-90">
-                Ajoute un agent IA à ton site existant. Réserve un appel pour discuter de ton projet.
+                Añade un agente IA a tu sitio existente. Reserva una llamada para discutir tu proyecto.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
