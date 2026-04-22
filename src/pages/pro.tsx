@@ -43,7 +43,7 @@ export default function ProPage() {
               </div>
 
               <p className="text-lg font-medium text-primary">
-                Pago único · Sin cuotas mensuales
+                40% al inicio + 60% al finalizar · Sin cuotas mensuales
               </p>
 
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

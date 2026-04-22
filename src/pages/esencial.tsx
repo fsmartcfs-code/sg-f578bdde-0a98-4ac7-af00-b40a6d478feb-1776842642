@@ -39,15 +39,15 @@ export default function EsencialPage() {
 
               <div className="flex items-baseline justify-center gap-2">
                 <span className="text-5xl md:text-6xl font-heading font-bold text-primary">697€</span>
-                <span className="text-xl text-muted-foreground">HT</span>
+                <span className="text-xl text-muted-foreground">sin IVA</span>
               </div>
 
               <p className="text-lg font-medium text-primary">
-                Pago único · Sin cuotas mensuales
+                40% al inicio + 60% al finalizar · Sin cuotas mensuales
               </p>
 
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Démarrage simple, impact professionnel. Sans frais mensuels.
+                Inicio simple, impacto profesional. Sin cuotas mensuales.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
