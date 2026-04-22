@@ -5,29 +5,29 @@ import { Check, X, Minus } from "lucide-react";
 
 const features = [
   {
-    category: "Tarification",
+    category: "Tarifas",
     items: [
       {
-        name: "Prix (Base Imponible HT)",
+        name: "Precio (Base Imponible sin IVA)",
         esencial: "697€",
-        pro: "1097€",
+        pro: "1297€",
         iaUpgrade: "997€",
         premium: "1997€",
       },
       {
-        name: "Durée de réalisation",
-        esencial: "~7 jours",
-        pro: "~10 jours",
-        iaUpgrade: "~10 jours",
-        premium: "~15-20 jours",
+        name: "Duración de realización",
+        esencial: "~7 días",
+        pro: "~10 días",
+        iaUpgrade: "~10 días",
+        premium: "~15-20 días",
       },
     ],
   },
   {
-    category: "Site Web Professionnel",
+    category: "Sitio Web Profesional",
     items: [
       {
-        name: "Site web professionnel",
+        name: "Sitio web profesional",
         esencial: true,
         pro: true,
         iaUpgrade: false,
@@ -41,21 +41,21 @@ const features = [
         premium: true,
       },
       {
-        name: "Portfolio / Galerie",
+        name: "Portfolio / Galería",
         esencial: true,
         pro: true,
         iaUpgrade: false,
         premium: true,
       },
       {
-        name: "Formulaire de contact",
+        name: "Formulario de contacto",
         esencial: true,
         pro: true,
         iaUpgrade: false,
         premium: true,
       },
       {
-        name: "Intégration WhatsApp",
+        name: "Integración WhatsApp",
         esencial: true,
         pro: true,
         iaUpgrade: true,
@@ -64,7 +64,7 @@ const features = [
     ],
   },
   {
-    category: "CRM & Automatisation",
+    category: "CRM y Automatización",
     items: [
       {
         name: "CRM simple",
@@ -74,28 +74,28 @@ const features = [
         premium: true,
       },
       {
-        name: "CRM avancé (pipeline, forecasting)",
+        name: "CRM avanzado (pipeline, forecasting)",
         esencial: false,
         pro: false,
         iaUpgrade: false,
         premium: true,
       },
       {
-        name: "Devis IA semi-automatiques",
+        name: "Presupuestos IA semi-automáticos",
         esencial: false,
         pro: true,
         iaUpgrade: true,
         premium: true,
       },
       {
-        name: "Agent IA conversationnel 24/7",
+        name: "Agente IA conversacional 24/7",
         esencial: false,
         pro: false,
         iaUpgrade: true,
         premium: true,
       },
       {
-        name: "Intégration Calendly Premium",
+        name: "Integración Calendly Premium",
         esencial: false,
         pro: true,
         iaUpgrade: false,
@@ -104,24 +104,17 @@ const features = [
     ],
   },
   {
-    category: "Support & Modifications",
+    category: "Soporte y Modificaciones",
     items: [
       {
-        name: "3 mois modifications gratuites",
+        name: "3 meses modificaciones gratuitas",
         esencial: true,
         pro: true,
         iaUpgrade: true,
         premium: true,
       },
       {
-        name: "Support VIP 24/7",
-        esencial: false,
-        pro: false,
-        iaUpgrade: false,
-        premium: true,
-      },
-      {
-        name: "Coaching initial",
+        name: "Coaching inicial",
         esencial: false,
         pro: false,
         iaUpgrade: false,
@@ -157,7 +150,7 @@ export function ComparisonTable() {
             Compara las ofertas
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Encuentra la solución perfecta para tu negocio. Todas las ofertas incluyen SANS FRAIS MENSUELS.
+            Encuentra la solución perfecta para tu negocio. Todas las ofertas incluyen SIN CUOTAS MENSUALES.
           </p>
         </div>
 
@@ -173,26 +166,26 @@ export function ComparisonTable() {
                     <div className="font-heading font-bold text-base text-primary">
                       Esencial
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1">697€ HT</div>
+                    <div className="text-xs text-muted-foreground mt-1">697€ sin IVA</div>
                   </th>
                   <th className="text-center p-4 bg-primary/5">
                     <div className="font-heading font-bold text-base text-primary">
                       Pro
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1">1097€ HT</div>
+                    <div className="text-xs text-muted-foreground mt-1">1297€ sin IVA</div>
                     <div className="text-xs font-semibold text-primary mt-1">MÁS POPULAR</div>
                   </th>
                   <th className="text-center p-4">
                     <div className="font-heading font-bold text-base text-foreground">
                       IA Upgrade
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1">997€ HT</div>
+                    <div className="text-xs text-muted-foreground mt-1">997€ sin IVA</div>
                   </th>
                   <th className="text-center p-4">
                     <div className="font-heading font-bold text-base text-foreground">
                       Premium
                     </div>
-                    <div className="text-xs text-muted-foreground mt-1">1997€ HT</div>
+                    <div className="text-xs text-muted-foreground mt-1">1997€ sin IVA</div>
                   </th>
                 </tr>
               </thead>
@@ -243,16 +236,16 @@ export function ComparisonTable() {
 
         <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-auto mt-8">
           <Button size="lg" variant="outline" asChild>
-            <Link href="/esencial">Découvrir Esencial</Link>
+            <Link href="/esencial">Descubrir Esencial</Link>
           </Button>
           <Button size="lg" asChild>
-            <Link href="/pro">Découvrir Pro</Link>
+            <Link href="/pro">Descubrir Pro</Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="/ia-upgrade">Découvrir IA Upgrade</Link>
+            <Link href="/ia-upgrade">Descubrir IA Upgrade</Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="/premium">Découvrir Premium</Link>
+            <Link href="/premium">Descubrir Premium</Link>
           </Button>
         </div>
       </div>

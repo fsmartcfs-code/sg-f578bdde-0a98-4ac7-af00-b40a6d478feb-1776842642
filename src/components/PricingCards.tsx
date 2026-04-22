@@ -25,7 +25,7 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "1097",
+    price: "1297",
     slug: "pro",
     icon: Sparkles,
     description: "La opción más completa para autónomos serios",
@@ -64,14 +64,14 @@ const plans = [
     price: "1997",
     slug: "premium",
     icon: Crown,
-    description: "Solución completa con agente IA y soporte VIP",
+    description: "Solución completa con agente IA avanzado",
     features: [
       "Todo lo de Pro +",
       "Agente IA conversacional avanzado",
       "Automatización completa presupuestos",
       "CRM avanzado con seguimiento",
       "Integraciones personalizadas",
-      "Soporte VIP 24/7",
+      "Coaching inicial completo",
       "Sin cuotas mensuales",
     ],
     cta: "Ver detalles",
@@ -91,10 +91,10 @@ export function PricingCards() {
             Precios transparentes, sin sorpresas. Todos los planes incluyen setup completo.
           </p>
           <Badge className="bg-primary hover:bg-primary text-primary-foreground font-semibold px-4 py-2 text-base">
-            SANS FRAIS MENSUELS
+            SIN CUOTAS MENSUALES
           </Badge>
           <p className="text-sm text-muted-foreground mt-2">
-            ✅ Toutes les offres incluent : hébergement compris (3 mois), 3 mois de modifications gratuites, la web es tuya forever
+            ✅ Todas las ofertas incluyen: alojamiento incluido (3 meses), 3 meses de modificaciones gratuitas, la web es tuya para siempre
           </p>
         </div>
 
