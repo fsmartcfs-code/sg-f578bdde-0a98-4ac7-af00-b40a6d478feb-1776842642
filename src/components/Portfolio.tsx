@@ -7,34 +7,46 @@ import { Briefcase, TrendingUp } from "lucide-react";
 
 const projects = [
   {
-    title: "Reforma integral cocina",
-    category: "Reformas",
-    image: "https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=800&q=80",
-  },
-  {
-    title: "Instalación eléctrica",
-    category: "Electricidad",
-    image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&q=80",
-  },
-  {
-    title: "Jardín diseño moderno",
-    category: "Jardinería",
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80",
-  },
-  {
-    title: "Fontanería baño completo",
+    title: "Fontanería Express",
     category: "Fontanería",
-    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
+    image: "/public/fontanero.png",
+    description: "Sitio web profesional con sistema de reservas 24/7",
+    result: "+150% leads en 3 meses"
   },
   {
-    title: "Pintura exterior vivienda",
-    category: "Pintura",
-    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=80",
+    title: "Electricista Pro",
+    category: "Electricidad",
+    image: "/placeholder-electrician.jpg",
+    description: "Web completa con CRM y presupuestos automáticos",
+    result: "+200% conversión"
   },
   {
-    title: "Carpintería a medida",
+    title: "Carpintería Artesanal",
     category: "Carpintería",
-    image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&q=80",
+    image: "/placeholder-carpenter.jpg",
+    description: "Portfolio visual con galería de trabajos",
+    result: "+120% solicitudes"
+  },
+  {
+    title: "Reformas Integrales",
+    category: "Reformas",
+    image: "/placeholder-reforms.jpg",
+    description: "Solución completa con IA y automatización",
+    result: "+300% leads cualificados"
+  },
+  {
+    title: "Limpieza Profesional",
+    category: "Limpieza",
+    image: "/placeholder-cleaning.jpg",
+    description: "Web con reservas online y gestión de servicios",
+    result: "+180% reservas online"
+  },
+  {
+    title: "Jardinería Verde",
+    category: "Jardinería",
+    image: "/placeholder-gardening.jpg",
+    description: "Portfolio impactante con antes/después",
+    result: "+140% contactos"
   },
 ];
 
