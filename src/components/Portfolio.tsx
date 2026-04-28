@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { ExternalLink } from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Briefcase, TrendingUp } from "lucide-react";
 
 const projects = [
   {
@@ -37,36 +40,31 @@ const projects = [
 
 export function Portfolio() {
   return (
-    <section className="py-16 md:py-20 bg-muted/30">
+    <section className="py-16 md:py-20">
       <div className="container">
         <div className="text-center space-y-4 mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold">
-            No solo digas que eres bueno, MUÉSTRALO
+            Portfolio de Proyectos Reales
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Sección de trabajos realizados incluida. Tu portfolio es tu mejor vendedor.
+            Resultados reales de autónomos que confiaron en nosotros
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, i) => (
-            <Card key={i} className="group overflow-hidden border-2 hover:border-primary transition-colors cursor-pointer">
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white translate-y-2 group-hover:translate-y-0 transition-transform">
-                  <span className="inline-block px-2 py-1 bg-primary rounded text-xs font-semibold mb-2">
-                    {project.category}
-                  </span>
-                  <h3 className="font-semibold text-lg flex items-center gap-2">
-                    {project.title}
-                    <ExternalLink className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </h3>
+            <Card key={i} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative aspect-video bg-muted">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Briefcase className="h-12 w-12 text-muted-foreground/40" />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+                <div className="flex items-center gap-2 text-sm text-primary">
+                  <TrendingUp className="h-4 w-4" />
+                  <span className="font-semibold">{project.result}</span>
                 </div>
               </div>
             </Card>
@@ -74,9 +72,11 @@ export function Portfolio() {
         </div>
 
         <div className="text-center mt-12">
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Cada trabajo visible genera confianza. Cada foto es una respuesta a "¿por qué debería elegirte a ti?".
-          </p>
+          <Button size="lg" variant="outline" asChild>
+            <Link href="/portfolio">
+              Ver Más Proyectos
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
