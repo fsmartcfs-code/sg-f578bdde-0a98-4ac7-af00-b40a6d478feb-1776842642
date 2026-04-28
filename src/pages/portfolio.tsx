@@ -24,15 +24,16 @@ const projects = [
   },
   {
     id: 2,
-    title: "Electricista Pro Barcelona",
-    category: "Electricidad",
-    description: "Sitio completo con CRM, presupuestos automáticos y gestión de clientes.",
-    image: "/placeholder-electrician.jpg",
-    tags: ["CRM", "Presupuestos IA", "Portfolio"],
+    title: "Trámites Fáciles",
+    category: "Asesoría",
+    description: "Gestoría 100% online con CRM, formularios avanzados y sistema multiidioma.",
+    image: "/placeholder-asesoria.jpg",
+    url: "https://tramitesfaciles.online/",
+    tags: ["CRM", "Formularios", "Multiidioma", "SEO"],
     results: [
-      "+200% conversión",
-      "80% presupuestos automatizados",
-      "5 estrellas Google Reviews"
+      "4.35★ en Trustpilot",
+      "Gestión 100% online",
+      "+15 años experiencia"
     ],
     duration: "10 días",
     pack: "Pro"
@@ -99,7 +100,7 @@ const projects = [
   }
 ];
 
-const categories = ["Todos", "Fontanería", "Electricidad", "Carpintería", "Reformas", "Limpieza", "Jardinería"];
+const categories = ["Todos", "Fontanería", "Asesoría", "Carpintería", "Reformas", "Limpieza", "Jardinería"];
 
 export default function PortfolioPage() {
   return (
@@ -189,9 +190,22 @@ export default function PortfolioPage() {
                   
                   <div className="p-6 space-y-4">
                     <div>
-                      <h3 className="font-heading text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                        {project.title}
-                      </h3>
+                      <div className="flex items-start justify-between gap-2 mb-2">
+                        <h3 className="font-heading text-xl font-bold group-hover:text-primary transition-colors">
+                          {project.title}
+                        </h3>
+                        {project.url && (
+                          <a 
+                            href={project.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-primary hover:text-primary-dark transition-colors shrink-0"
+                            aria-label="Visitar sitio web"
+                          >
+                            <ExternalLink className="h-5 w-5" />
+                          </a>
+                        )}
+                      </div>
                       <p className="text-muted-foreground text-sm">
                         {project.description}
                       </p>
