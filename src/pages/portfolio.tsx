@@ -27,7 +27,7 @@ const projects = [
     title: "Trámites Fáciles",
     category: "Asesoría",
     description: "Gestoría 100% online con CRM, formularios avanzados y sistema multiidioma.",
-    image: "/placeholder-asesoria.jpg",
+    image: "/tramitesfaciles-screenshot.png",
     url: "https://tramitesfaciles.online/",
     tags: ["CRM", "Formularios", "Multiidioma", "SEO"],
     results: [
