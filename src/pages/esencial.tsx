@@ -3,6 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, X, Calendar, MessageCircle, Zap, TrendingUp, Globe, Star, Briefcase, Mail, Shield } from "lucide-react";
 
 export default function EsencialPage() {
@@ -259,8 +260,83 @@ export default function EsencialPage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-16 md:py-20">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
+                Preguntas Frecuentes
+              </h2>
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="pago" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cómo funciona el pago?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Pagas 30% (209€) al inicio para reservar tu proyecto. El 70% restante (488€) se paga cuando tu sitio esté listo y validado por ti. Sin sorpresas, sin cuotas mensuales.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="entrega" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cuándo recibiré mi sitio web?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    El Pack Esencial se entrega en 7 días hábiles. Recibes el sitio funcional, online y listo para captar clientes. Incluye 3 meses de modificaciones gratis.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="propiedad" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Realmente es 100% mío?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Tras el pago final, recibes una copia completa del código fuente. Puedes modificarlo, llevártelo a otro hosting, hacer lo que quieras. Sin letra pequeña, sin dependencias perpetuas.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="costes" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Hay costes ocultos o cuotas mensuales?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    No. El precio de 697€ incluye todo: diseño, desarrollo, hosting 1 año, y 3 meses de soporte. Después del primer año, solo pagas el hosting (aprox. 10-15€/mes) si quieres mantenerlo con nosotros.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="modificaciones" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Puedo hacer cambios después de la entrega?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Tienes 3 meses de modificaciones gratis incluidos (cambios de contenido, ajustes de diseño, etc.). Después, puedes contratar soporte puntual o hacerlo tú mismo si tienes conocimientos técnicos.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="diferencia" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Qué diferencia hay con una web de 200€?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Las webs baratas usan plantillas genéricas sin personalización, código limitado, y cero soporte. Nosotros entregamos diseño personalizado, código optimizado para conversión, widget de reviews, portfolio funcional, y 3 meses de soporte. Es la diferencia entre "tener una web" y "conseguir clientes".
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="siguiente" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Qué pasa si necesito más funciones después?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Puedes hacer upgrade al Pack Pro (añadir CRM + Devis IA) o al Pack Premium (solución completa con Agente IA). Te descontamos lo ya pagado. También puedes contratar desarrollos puntuales.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Final */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-20 bg-primary text-primary-foreground">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold">

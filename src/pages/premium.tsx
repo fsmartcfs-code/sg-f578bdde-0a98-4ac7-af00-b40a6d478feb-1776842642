@@ -3,6 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, X, ArrowLeft, Calendar, MessageCircle, Bot, Sparkles, Crown, Zap, TrendingUp } from "lucide-react";
 
 export default function PremiumPage() {
@@ -413,8 +414,92 @@ export default function PremiumPage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-16 md:py-20">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
+                Preguntas Frecuentes
+              </h2>
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="pago" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cómo funciona el pago del Pack Premium?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Pagas 50% (999€) al inicio tras la llamada discovery. El 50% restante (998€) se paga cuando toda la solución esté operativa: web + agente IA + CRM avanzado + integraciones. Sin cuotas mensuales ocultas.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="discovery" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Qué es la llamada discovery?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Una sesión de 60-90 min para entender tu negocio, procesos comerciales, y objetivos. Analizamos qué automatizar, cómo configurar el agente IA, y qué integraciones necesitas. Es obligatoria para garantizar que el Premium es adecuado para ti.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="entrega" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cuánto tarda la implementación completa?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    15-20 días hábiles según complejidad. Incluye desarrollo completo, configuración de todos los sistemas, integraciones personalizadas, migración de datos si es necesario, y 2 sesiones de coaching (4 horas total). Entregamos todo operativo.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="vs-pro" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Qué añade el Premium vs el Pack Pro?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Agente IA conversacional avanzado (vs solo presupuestos IA), CRM con automatización de seguimiento (vs CRM simple), presupuestos 100% automáticos (vs semi-automáticos), integraciones ilimitadas (vs básicas), y coaching comercial incluido. Es el Pro + automatización total.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="crm-avanzado" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Qué incluye el CRM avanzado?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Pipeline visual de oportunidades, seguimiento automático de leads, recordatorios inteligentes, historial completo de interacciones, reportes de conversión, y sincronización multi-canal (WhatsApp, email, Calendly, teléfono). Todo centralizado.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="coaching" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Qué incluye el coaching comercial?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    2 sesiones (4 horas total): optimización de procesos comerciales, estrategias de calificación de leads, configuración de flujos de automatización, análisis de métricas de conversión, y mejores prácticas. Te enseñamos a sacar el máximo provecho del sistema.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="propiedad" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Todo el sistema es 100% mío?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Código completo entregado: web + agente IA + CRM avanzado + todas las integraciones. 100% tuyo. Colaboramos como expertos, pero la tecnología te pertenece. Sin dependencias perpetuas, sin cuotas obligatorias.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="roi" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Vale la pena la inversión de 1997€?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Si capturas +20 leads/mes y cierras >15% (3+ clientes/mes), sí. El sistema recupera leads perdidos, acelera cierres con presupuestos automáticos, y libera tiempo comercial. Típicamente se amortiza en 2-4 meses. Además, es una inversión única, no un gasto recurrente.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Final */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-20 bg-primary text-primary-foreground">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold">

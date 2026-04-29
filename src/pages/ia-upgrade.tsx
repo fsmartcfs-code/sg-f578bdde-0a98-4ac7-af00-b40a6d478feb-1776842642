@@ -3,6 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, X, Calendar, MessageCircle, Bot, TrendingUp, AlertCircle } from "lucide-react";
 
 export default function IAUpgradePage() {
@@ -338,8 +339,92 @@ export default function IAUpgradePage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-16 md:py-20">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
+                Preguntas Frecuentes
+              </h2>
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="pago" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cómo funciona el pago del IA Upgrade?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Pagas 50% (649€) al inicio para reservar el desarrollo. El 50% restante (648€) se paga cuando el agente IA esté operativo y validado por ti. Sin cuotas mensuales de SaaS.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="prerequisito" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Necesito tener un sitio web ya funcionando?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. El IA Upgrade es una mejora para sitios existentes. Si no tienes web, te recomendamos el Pack Pro o Premium que incluyen todo desde cero. Si tienes web, este pack es perfecto para añadir automatización IA.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="agente-ia" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cómo funciona el Agente IA Dispatcher?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Responde consultas 24/7, califica leads según tu criterio, agenda citas directamente en tu calendario, y deriva urgencias a WhatsApp. Aprende de tu base de conocimiento (FAQ, servicios, tarifas). Es como un asistente que nunca duerme.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="entrega" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cuánto tarda la implementación?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    10 días hábiles. Incluye integración del agente IA en tu sitio, configuración de la base de conocimiento, conexión a WhatsApp/Email, CRM simple operativo, y sesión de formación (1 hora). Entregamos todo funcionando.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="personalizacion" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Puedo personalizar las respuestas del agente IA?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Configuramos el tono (formal, cercano, técnico), las respuestas predefinidas, y los criterios de calificación de leads. Incluye 3 meses de ajustes gratis. El agente aprende de tu feedback y mejora con el tiempo.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="propiedad" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿El código del agente IA es mío?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Recibes todo el código: agente IA + integraciones + CRM. 100% tuyo. Sin dependencia de plataformas SaaS externas. Puedes modificarlo, escalarlo, o migrarlo. Libertad total.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="vs-saas" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Por qué no usar un chatbot SaaS?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Los SaaS cobran 50-200€/mes para siempre. En 1 año pagas más que nuestro precio único (1297€). Además, mantienen el control: si dejas de pagar, pierdes todo. Nosotros: una inversión, propiedad permanente, cero cuotas.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="siguiente" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Puedo hacer upgrade al Pack Premium después?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Si necesitas CRM avanzado, presupuestos IA automáticos, o coaching comercial, puedes hacer upgrade al Premium. Te descontamos lo ya pagado. El Premium incluye todo el IA Upgrade + funciones enterprise.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Final */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-20 bg-primary text-primary-foreground">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold">

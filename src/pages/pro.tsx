@@ -3,6 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, X, Calendar, MessageCircle, Sparkles, TrendingUp, Zap } from "lucide-react";
 
 export default function ProPage() {
@@ -271,8 +272,83 @@ export default function ProPage() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="py-16 md:py-20">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12">
+                Preguntas Frecuentes
+              </h2>
+              <Accordion type="single" collapsible className="space-y-4">
+                <AccordionItem value="pago" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cómo funciona el pago del Pack Pro?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Pagas 30% (389€) al inicio para reservar tu proyecto. El 70% restante (908€) se paga cuando todo esté operativo: sitio web + CRM configurado + presupuestos IA funcionando. Sin cuotas mensuales.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="entrega" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cuánto tarda la entrega completa?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    El Pack Pro se entrega en 10 días hábiles. Incluye sitio web completo, CRM configurado con tus clientes, sistema de presupuestos IA operativo, y Calendly Premium integrado. Todo listo para automatizar tu comercial.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="crm" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Cómo funciona el CRM incluido?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    El CRM simple te permite gestionar contactos, leads y oportunidades en un solo lugar. Sincronización automática con WhatsApp, email y Calendly. Te entregamos el sistema configurado y te formamos en su uso (30 min sesión incluida).
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="presupuestos-ia" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Qué son los presupuestos IA semi-automáticos?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    El sistema genera borradores de presupuestos basados en tus servicios y tarifas. Tú revisas, ajustas si es necesario, y envías. Ahorra 70% del tiempo vs hacerlos manualmente. Configurable según tu sector.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="kit-digital" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿El Kit Digital está incluido en el precio?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Te ayudamos con la tramitación del Kit Digital (subvención de hasta 2000€ del gobierno español). Si eres elegible, puedes recuperar parte o toda la inversión. Te guiamos en todo el proceso.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="propiedad" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿El CRM y las integraciones son míos también?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Sí. Recibes el código completo: sitio web + CRM + sistema de presupuestos + todas las integraciones. 100% tuyo, sin dependencias. Puedes exportar tus datos, modificar el sistema, o migrar a otro hosting cuando quieras.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="diferencia-esencial" className="border rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold">
+                    ¿Vale la pena vs el Pack Esencial?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Si gestionas +10 consultas/semana, sí. El CRM evita perder leads, los presupuestos IA aceleran cierres, y Calendly elimina el ping-pong de emails. Recuperas la inversión con 2-3 clientes adicionales captados.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Final */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-20 bg-primary text-primary-foreground">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold">
