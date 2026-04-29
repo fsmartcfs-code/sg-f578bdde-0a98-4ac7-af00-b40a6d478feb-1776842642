@@ -26,10 +26,10 @@ export default function IAUpgradePage() {
               </p>
               <div className="flex flex-col items-center gap-3 pt-4">
                 <div className="text-3xl text-muted-foreground line-through">
-                  1497€
+                  1997€
                 </div>
                 <div className="flex items-baseline gap-3">
-                  <span className="text-5xl md:text-6xl font-bold text-primary">997€</span>
+                  <span className="text-5xl md:text-6xl font-bold text-primary">1297€</span>
                   <span className="text-xl text-muted-foreground">sin IVA</span>
                 </div>
                 <p className="text-sm text-muted-foreground">

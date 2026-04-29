@@ -45,8 +45,8 @@ const plans = [
   },
   {
     name: "IA Upgrade",
-    originalPrice: "1497€",
-    price: "997€",
+    originalPrice: "1997€",
+    price: "1297€",
     slug: "ia-upgrade",
     icon: Bot,
     description: "Agente IA conversacional para tu sitio existente",
