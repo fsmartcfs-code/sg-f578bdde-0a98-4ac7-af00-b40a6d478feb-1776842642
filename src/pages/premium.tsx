@@ -3,7 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, X, Calendar, MessageCircle, Bot, Sparkles, Crown, Zap, TrendingUp } from "lucide-react";
+import { Check, X, ArrowLeft, Calendar, MessageCircle, Bot, Sparkles, Crown, Zap, TrendingUp } from "lucide-react";
 
 export default function PremiumPage() {
   return (
