@@ -3,7 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowLeft, Calendar, MessageCircle, Zap, TrendingUp, Globe, Star, Briefcase, Mail, Shield } from "lucide-react";
+import { Check, X, Calendar, MessageCircle, Zap, TrendingUp, Globe, Star, Briefcase, Mail, Shield } from "lucide-react";
 
 export default function EsencialPage() {
   return (
@@ -120,6 +120,47 @@ export default function EsencialPage() {
                     </div>
                   </Card>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Propiedad del Sitio */}
+        <section className="py-12 md:py-16 bg-primary/5">
+          <div className="container">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold">
+                Tu Sitio, Tu Propiedad
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <Card className="p-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-primary/10 rounded-lg">
+                        <Check className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold">100% Tuya</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Una vez completado el pago final (60%), recibes una copia completa del código fuente. 
+                      El sitio es 100% tuyo, sin letra pequeña.
+                    </p>
+                  </div>
+                </Card>
+                <Card className="p-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-destructive/10 rounded-lg">
+                        <X className="h-6 w-6 text-destructive" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold">No Como las Agencias</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Las agencias tradicionales mantienen el control perpetuo. Si dejas de pagar cuotas mensuales, 
+                      pierdes acceso a TU sitio web. Nosotros te damos independencia total.
+                    </p>
+                  </div>
+                </Card>
               </div>
             </div>
           </div>

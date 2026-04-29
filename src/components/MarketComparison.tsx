@@ -113,6 +113,29 @@ const comparisonData = [
     ]
   },
   {
+    category: "Propiedad del Sitio",
+    items: [
+      {
+        feature: "Propiedad del código",
+        webParaAutonomos: "100% tuya tras pago final",
+        webBarata: "Plantilla bajo licencia",
+        agenciaTradicional: "Dependencia perpetua"
+      },
+      {
+        feature: "Acceso al código fuente",
+        webParaAutonomos: "Copia completa entregada",
+        webBarata: "Limitado/bloqueado",
+        agenciaTradicional: "Sin acceso si dejas de pagar"
+      },
+      {
+        feature: "Independencia tecnológica",
+        webParaAutonomos: true,
+        webBarata: false,
+        agenciaTradicional: false
+      }
+    ]
+  },
+  {
     category: "Tiempo de Entrega",
     items: [
       {

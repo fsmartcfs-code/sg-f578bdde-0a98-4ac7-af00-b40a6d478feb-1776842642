@@ -3,7 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowLeft, Calendar, MessageCircle, Crown, TrendingUp, Sparkles } from "lucide-react";
+import { Check, X, Calendar, MessageCircle, Bot, Sparkles, Crown, Zap, TrendingUp } from "lucide-react";
 
 export default function PremiumPage() {
   return (
@@ -243,6 +243,47 @@ export default function PremiumPage() {
                   </div>
                 </div>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Propiedad del Sitio */}
+        <section className="py-12 md:py-16 bg-primary/5">
+          <div className="container">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold">
+                Solución Completa, 100% Tuya
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <Card className="p-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-primary/10 rounded-lg">
+                        <Check className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold">Propiedad Total</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Web + Agente IA + CRM Avanzado + Integraciones: código completo entregado tras pago final. 
+                      Colaboración con experto, pero la tecnología es 100% tuya.
+                    </p>
+                  </div>
+                </Card>
+                <Card className="p-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-destructive/10 rounded-lg">
+                        <X className="h-6 w-6 text-destructive" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold">No Como Agencias Premium</h3>
+                    </div>
+                    <p className="text-muted-foreground">
+                      Agencias premium cobran 500-2000€/mes indefinidamente y mantienen control perpetuo. 
+                      Nosotros: inversión única, independencia permanente.
+                    </p>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
