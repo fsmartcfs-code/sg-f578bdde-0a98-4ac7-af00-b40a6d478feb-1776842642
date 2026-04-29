@@ -33,7 +33,7 @@ export default function EsencialPage() {
                   <span className="text-xl text-muted-foreground">sin IVA</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Pago: 40% al inicio + 60% al finalizar
+                  Pago: 30% al inicio + 70% al finalizar
                 </p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function EsencialPage() {
                       <h3 className="font-heading text-xl font-bold">100% Tuya</h3>
                     </div>
                     <p className="text-muted-foreground">
-                      Una vez completado el pago final (60%), recibes una copia completa del código fuente. 
+                      Una vez completado el pago final (70%), recibes una copia completa del código fuente. 
                       El sitio es 100% tuyo, sin letra pequeña.
                     </p>
                   </div>

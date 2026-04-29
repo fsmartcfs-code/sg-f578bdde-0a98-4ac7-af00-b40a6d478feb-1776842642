@@ -145,7 +145,7 @@ export function PricingCards() {
                     <span className="text-muted-foreground">sin IVA</span>
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Pago: 40% al inicio + 60% al finalizar
+                    Pago: {plan.slug === "ia-upgrade" || plan.slug === "premium" ? "50% al inicio + 50% al finalizar" : "30% al inicio + 70% al finalizar"}
                   </p>
                 </div>
 

@@ -42,8 +42,8 @@ export default function PremiumPage() {
                 <span className="text-xl text-muted-foreground">sin IVA</span>
               </div>
 
-              <p className="text-lg font-medium text-primary">
-                40% al inicio + 60% al finalizar · Sin cuotas mensuales
+              <p className="text-sm text-muted-foreground">
+                Pago: 50% al inicio + 50% al finalizar
               </p>
 
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

@@ -33,7 +33,7 @@ export default function ProPage() {
                   <span className="text-xl text-muted-foreground">sin IVA</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Pago: 40% al inicio + 60% al finalizar
+                  Pago: 30% al inicio + 70% al finalizar
                 </p>
               </div>
             </div>
