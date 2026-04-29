@@ -159,7 +159,6 @@ export function MarketComparison() {
 
         <div className="overflow-x-auto">
           <div className="min-w-[800px]">
-            {/* Header */}
             <div className="grid grid-cols-4 gap-4 mb-6">
               <div className="font-heading font-bold text-lg">
                 Característica
@@ -196,7 +195,6 @@ export function MarketComparison() {
               </div>
             </div>
 
-            {/* Comparison rows by category */}
             {comparisonData.map((section, sectionIdx) => (
               <div key={sectionIdx} className="mb-8">
                 <h3 className="font-heading font-bold text-xl mb-4 text-primary">
