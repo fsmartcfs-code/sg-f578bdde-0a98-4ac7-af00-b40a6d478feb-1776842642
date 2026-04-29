@@ -490,7 +490,7 @@ export default function PremiumPage() {
                     ¿Vale la pena la inversión de 1997€?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Si capturas +20 leads/mes y cierras >15% (3+ clientes/mes), sí. El sistema recupera leads perdidos, acelera cierres con presupuestos automáticos, y libera tiempo comercial. Típicamente se amortiza en 2-4 meses. Además, es una inversión única, no un gasto recurrente.
+                    Si capturas +20 leads/mes y cierras {'>'}15% (3+ clientes/mes), sí. El sistema recupera leads perdidos, acelera cierres con presupuestos automáticos, y libera tiempo comercial. Típicamente se amortiza en 2-4 meses. Además, es una inversión única, no un gasto recurrente.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
