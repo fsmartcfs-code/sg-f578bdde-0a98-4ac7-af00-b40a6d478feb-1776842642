@@ -3,7 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, ArrowLeft, Calendar, MessageCircle, Zap, TrendingUp } from "lucide-react";
+import { Check, ArrowLeft, Calendar, MessageCircle, Zap, TrendingUp, Globe, Star, Briefcase, Mail, Shield } from "lucide-react";
 
 export default function EsencialPage() {
   return (
