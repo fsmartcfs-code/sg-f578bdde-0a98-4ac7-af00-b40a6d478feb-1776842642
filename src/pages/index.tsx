@@ -4,6 +4,7 @@ import { BeforeAfter } from "@/components/BeforeAfter";
 import { SocialProof } from "@/components/SocialProof";
 import { Portfolio } from "@/components/Portfolio";
 import { PainPoints } from "@/components/PainPoints";
+import { MarketComparison } from "@/components/MarketComparison";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { PricingCards } from "@/components/PricingCards";
 import { PartnerOffer } from "@/components/PartnerOffer";
@@ -24,6 +25,7 @@ export default function Home() {
         <SocialProof />
         <Portfolio />
         <PainPoints />
+        <MarketComparison />
         <ComparisonTable />
         <PricingCards />
         <PartnerOffer />
