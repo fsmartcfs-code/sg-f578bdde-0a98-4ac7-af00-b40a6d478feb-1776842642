@@ -2,13 +2,15 @@ import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Check, Sparkles, Crown, Zap, Bot } from "lucide-react";
+import { Check, Sparkles, Crown, Bot, Zap } from "lucide-react";
 
 const plans = [
   {
     name: "Esencial",
     originalPrice: "997€",
     price: "697€",
+    slug: "esencial",
+    icon: Zap,
     description: "Para autónomos que necesitan presencia profesional online",
     features: [
       "Sitio web profesional",
@@ -20,8 +22,7 @@ const plans = [
       "Hosting incluido 1 año"
     ],
     cta: "Descubrir Esencial",
-    href: "/esencial",
-    badge: "POPULAR"
+    popular: false,
   },
   {
     name: "Pro",
@@ -29,7 +30,7 @@ const plans = [
     price: "1297€",
     slug: "pro",
     icon: Sparkles,
-    description: "La opción más completa para autónomos serios",
+    description: "Para negocios en crecimiento que quieren automatizar",
     features: [
       "Todo lo de Esencial +",
       "CRM simple incluido",
