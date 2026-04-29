@@ -51,6 +51,9 @@ export default function PremiumPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                <div className="text-3xl text-muted-foreground line-through">
+                  2997€
+                </div>
                 <Button size="lg" className="text-base font-semibold" asChild>
                   <Link href="https://calendly.com/webparaautonomos" target="_blank">
                     <Calendar className="mr-2 h-5 w-5" />

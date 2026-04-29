@@ -7,7 +7,8 @@ import { Check, Sparkles, Crown, Zap, Bot } from "lucide-react";
 const plans = [
   {
     name: "Esencial",
-    price: "697",
+    originalPrice: "997€",
+    price: "697€",
     slug: "esencial",
     icon: Zap,
     description: "Perfecto para empezar a convertir visitas en clientes",
@@ -25,7 +26,8 @@ const plans = [
   },
   {
     name: "Pro",
-    price: "1297",
+    originalPrice: "1997€",
+    price: "1297€",
     slug: "pro",
     icon: Sparkles,
     description: "La opción más completa para autónomos serios",
@@ -43,7 +45,8 @@ const plans = [
   },
   {
     name: "IA Upgrade",
-    price: "997",
+    originalPrice: "1497€",
+    price: "997€",
     slug: "ia-upgrade",
     icon: Bot,
     description: "Agente IA conversacional para tu sitio existente",
@@ -61,7 +64,8 @@ const plans = [
   },
   {
     name: "Premium",
-    price: "1997",
+    originalPrice: "2997€",
+    price: "1997€",
     slug: "premium",
     icon: Crown,
     description: "Solución completa con agente IA avanzado",
@@ -128,15 +132,20 @@ export function PricingCards() {
                   </p>
                 </div>
 
-                <div className="space-y-1">
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-heading font-bold text-primary">
-                      {plan.price}€
+                <div className="mb-6">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-2xl text-muted-foreground line-through">
+                      {plan.originalPrice}
                     </span>
-                    <span className="text-sm text-muted-foreground">HT</span>
                   </div>
-                  <p className="text-xs font-medium text-primary">
-                    Pago único · Sin cuotas
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl md:text-5xl font-bold text-primary">
+                      {plan.price}
+                    </span>
+                    <span className="text-muted-foreground">sin IVA</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Pago: 40% al inicio + 60% al finalizar
                   </p>
                 </div>
 

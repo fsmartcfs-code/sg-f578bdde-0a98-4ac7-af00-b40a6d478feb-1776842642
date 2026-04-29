@@ -14,55 +14,27 @@ export default function ProPage() {
       />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-background">
+        <section className="py-16 md:py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container">
-            <Link 
-              href="/#comparacion" 
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Volver a comparación
-            </Link>
-
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <Badge className="bg-primary hover:bg-primary text-primary-foreground font-semibold px-4 py-2">
-                MÁS POPULAR · SIN CUOTAS MENSUALES
-              </Badge>
-              
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <Badge className="mb-4">PACK PRO</Badge>
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold">
-                Pack Pro
+                Automatiza y Escala tu Negocio
               </h1>
-              
-              <p className="text-xl md:text-2xl text-muted-foreground">
-                Crecimiento con CRM y Presupuestos IA (1297€ sin IVA)
+              <p className="text-xl text-muted-foreground">
+                Todo lo esencial + CRM + Presupuestos con IA + Kit Digital
               </p>
-
-              <div className="flex items-baseline justify-center gap-2">
-                <span className="text-5xl md:text-6xl font-heading font-bold text-primary">1297€</span>
-                <span className="text-xl text-muted-foreground">sin IVA</span>
-              </div>
-
-              <p className="text-lg font-medium text-primary">
-                40% al inicio + 60% al finalizar · Sin cuotas mensuales
-              </p>
-
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Todo lo de Esencial + automatización comercial. Sin cuotas mensuales.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button size="lg" className="text-base font-semibold" asChild>
-                  <Link href="https://calendly.com/webparaautonomos" target="_blank">
-                    <Calendar className="mr-2 h-5 w-5" />
-                    Reservar llamada
-                  </Link>
-                </Button>
-                <Button size="lg" className="text-base font-semibold bg-[#25D366] hover:bg-[#20BA5A] text-white border-0" asChild>
-                  <Link href="https://wa.me/34711248274?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Pack%20Pro" target="_blank">
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Escribir por WhatsApp
-                  </Link>
-                </Button>
+              <div className="flex flex-col items-center gap-3 pt-4">
+                <div className="text-3xl text-muted-foreground line-through">
+                  1997€
+                </div>
+                <div className="flex items-baseline gap-3">
+                  <span className="text-5xl md:text-6xl font-bold text-primary">1297€</span>
+                  <span className="text-xl text-muted-foreground">sin IVA</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Pago: 40% al inicio + 60% al finalizar
+                </p>
               </div>
             </div>
           </div>

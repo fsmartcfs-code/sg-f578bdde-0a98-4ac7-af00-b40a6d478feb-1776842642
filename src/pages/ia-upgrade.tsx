@@ -14,64 +14,27 @@ export default function IAUpgradePage() {
       />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 to-background">
+        <section className="py-16 md:py-20 bg-gradient-to-b from-primary/5 to-background">
           <div className="container">
-            <Link 
-              href="/#comparacion" 
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-8"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Volver a comparación
-            </Link>
-
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <Badge className="bg-primary hover:bg-primary text-primary-foreground font-semibold px-4 py-2">
-                SIN CUOTAS MENSUALES
-              </Badge>
-              
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              <Badge className="mb-4">IA UPGRADE</Badge>
               <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold">
-                IA Upgrade
+                Añade un Agente IA 24/7 a tu Web
               </h1>
-              
-              <p className="text-xl md:text-2xl text-muted-foreground">
-                Agente Conversacional 24/7 (997€ sin IVA)
+              <p className="text-xl text-muted-foreground">
+                Para quien ya tiene sitio web y quiere automatización inteligente
               </p>
-
-              <div className="flex items-baseline justify-center gap-2">
-                <span className="text-5xl md:text-6xl font-heading font-bold text-primary">997€</span>
-                <span className="text-xl text-muted-foreground">sin IVA</span>
-              </div>
-
-              <p className="text-lg font-medium text-primary">
-                40% al inicio + 60% al finalizar · Sin cuotas mensuales
-              </p>
-
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Añade automatización IA a tu sitio existente. Sin cuotas mensuales.
-              </p>
-
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 max-w-xl mx-auto">
-                <div className="flex items-start gap-3">
-                  <AlertCircle className="h-5 w-5 text-blue-600 shrink-0 mt-0.5" />
-                  <p className="text-sm text-blue-900 text-left">
-                    <strong>Requisito previo:</strong> Debes tener un sitio web funcional (creado por ti, una agencia o nosotros).
-                  </p>
+              <div className="flex flex-col items-center gap-3 pt-4">
+                <div className="text-3xl text-muted-foreground line-through">
+                  1497€
                 </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Button size="lg" className="text-base font-semibold" asChild>
-                  <Link href="https://calendly.com/webparaautonomos" target="_blank">
-                    <Calendar className="mr-2 h-5 w-5" />
-                    Reservar llamada
-                  </Link>
-                </Button>
-                <Button size="lg" className="text-base font-semibold bg-[#25D366] hover:bg-[#20BA5A] text-white border-0" asChild>
-                  <Link href="https://wa.me/34711248274?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20IA%20Upgrade" target="_blank">
-                    <MessageCircle className="mr-2 h-5 w-5" />
-                    Escribir por WhatsApp
-                  </Link>
-                </Button>
+                <div className="flex items-baseline gap-3">
+                  <span className="text-5xl md:text-6xl font-bold text-primary">997€</span>
+                  <span className="text-xl text-muted-foreground">sin IVA</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Pago: 40% al inicio + 60% al finalizar
+                </p>
               </div>
             </div>
           </div>
